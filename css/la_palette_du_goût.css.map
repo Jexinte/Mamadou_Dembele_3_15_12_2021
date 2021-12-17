@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,0BAA0B;AAC1B,OAAO,CAAC,6FAAI;AACZ,6BAA6B;AAC7B,OAAO,CAAC,2HAAI;AAQZ,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,eAAe,EAAE,IAAI;CACxB",
+    "sources": [
+        "la_palette_du_goût.scss"
+    ],
+    "names": [],
+    "file": "la_palette_du_goût.css"
+}
