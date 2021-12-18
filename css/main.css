@@ -1,7 +1,9 @@
 /* Shrikhand Regular 400*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shrikhand&display=swap");
-/* Roboto Light 300 italic */
+/* Roboto */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* Roboto Bold 700 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +54,44 @@
     right: 10px;
   }
   /* END OF SECTION -1 */
-  .section-2, .section-3, .section-4 img {
+  /* SECTION -2 */
+  .section-2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "a a a" "b b b";
+    justify-items: center;
+    font-family: "Roboto", sans-serif;
+    padding: 2rem;
+    background-color: lightgray;
+  }
+  .description {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: a;
+  }
+  .description h1 {
+    font-weight: bold 700;
+    margin-bottom: 15px;
+  }
+  .description span {
+    position: relative;
+    left: 40px;
+  }
+  .description p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+  }
+  .button {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: b;
+  }
+  /* SECTION -2 */
+  .section-3, .section-4 img {
     display: none;
   }
 }
