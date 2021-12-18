@@ -1,15 +1,20 @@
 /* Shrikhand Regular 400*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shrikhand&display=swap");
 /* Roboto Light 300 italic */
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Roboto:ital,wght@1,300&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
+*:visited {
+  color: black;
+}
+
 /* MOBILE */
 @media screen and (min-width: 0px) and (max-width: 768px) {
+  /* HEADER */
   #logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -17,12 +22,38 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-    padding: 0.9em 0.5em;
+    padding: 1.5em 1em 0.9em 1em;
+    -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: relative;
   }
-  .section-1, .section-2, .section-3, .section-4 img {
-    width: 25%;
+  /* END OF HEADER */
+  /* SECTION - 1 */
+  .location {
+    background-color: #F0F0F0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 0.9em 1em 0.7em 1em;
+  }
+  .location .fa-map-marker-alt {
+    position: relative;
+    right: 25px;
+  }
+  .location p {
+    position: relative;
+    right: 10px;
+  }
+  /* END OF SECTION -1 */
+  .section-2, .section-3, .section-4 img {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
