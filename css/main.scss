@@ -24,7 +24,7 @@ $FRoboto : 'Roboto', sans-serif;
 }
 
 /* MOBILE */
-@media screen and (min-width:0px) and (max-width:768px)
+@media screen and (min-width:0px) and (max-width:767px)
 {
     
     
@@ -35,10 +35,9 @@ $FRoboto : 'Roboto', sans-serif;
             display: flex;
             justify-content: center;
             padding: 1.5em 1em 0.9em 1em;
-            box-shadow: 0px 1px 8px rgba(0,0,0,0.5);
-            z-index: 10;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+            z-index: 1;
             position:relative;
-            
         }
 
     /* END OF HEADER */
@@ -47,7 +46,7 @@ $FRoboto : 'Roboto', sans-serif;
   
     .location
     {
-        background-color: #F0F0F0;
+        background-color: #E8E8E8;
         display: flex;
         justify-content: center;
         font-family: $FRoboto;
@@ -83,12 +82,18 @@ $FRoboto : 'Roboto', sans-serif;
          justify-items: center;
         font-family: $FRoboto;
         padding:2rem;
-        background-color: lightgray;
+        background-color: #F0F0F0;
     }
 
     .description
     {
         grid-area: a;
+        padding:5px 0px;
+
+        & #selected_by {
+            position: relative;
+            left:39px;
+        }
         
     }
 
@@ -96,14 +101,18 @@ $FRoboto : 'Roboto', sans-serif;
 
     .description h1
     {
-        font-weight:bold 700;
+        font-weight:bold;
         margin-bottom: 15px;
-
-    }
-    .description span{
         position: relative;
-        left:40px;
+        left:45px;
+        width: 80%;
     }
+    .description #convenance{
+        position: relative;
+        left:32px;
+    }
+
+
     
     .description p {
         margin-bottom: 15px;
@@ -112,7 +121,14 @@ $FRoboto : 'Roboto', sans-serif;
 
     .button{
         grid-area:b;
-        
+        border:1px solid black;
+        padding:0.8em 1em;
+        border-radius: 30px;
+        background-color:red;
+    }
+
+    .button a {
+        color:white;
     }
     
     /* SECTION -2 */
