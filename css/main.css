@@ -15,7 +15,7 @@
 }
 
 /* MOBILE */
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   /* HEADER */
   #logo {
     display: -webkit-box;
@@ -64,7 +64,7 @@
     justify-items: center;
     font-family: "Roboto", sans-serif;
     padding: 2rem;
-    background-color: #F0F0F0;
+    background-color: #F8F8F8;
   }
   .description {
     -ms-grid-row: 1;
@@ -83,10 +83,11 @@
     position: relative;
     left: 45px;
     width: 80%;
+    font-size: 1.3em;
   }
   .description #convenance {
     position: relative;
-    left: 32px;
+    left: 35px;
   }
   .description p {
     margin-bottom: 15px;
@@ -105,9 +106,21 @@
   .button a {
     color: white;
   }
-  /* SECTION -2 */
+  /* END OF SECTION -2 */
   .section-3, .section-4 img {
     display: none;
+  }
+}
+
+/* ADJUSTING SIZE AND POSITION OF ELEMENTS OF SECTION -2 */
+@media screen and (min-width: 320px) and (max-width: 368px) {
+  .description h1 {
+    position: relative;
+    font-size: 1.1em;
+    left: 35px;
+  }
+  .description p {
+    font-size: 0.9em;
   }
 }
 /*# sourceMappingURL=main.css.map */
