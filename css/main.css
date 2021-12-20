@@ -98,10 +98,13 @@
     -ms-grid-column: 1;
     -ms-grid-column-span: 3;
     grid-area: b;
-    padding: 1.1em;
+    padding: 0.9em 1.5em;
     border-radius: 30px;
     background-image: -webkit-gradient(linear, left top, right bottom, from(#E370DA), color-stop(#D66CDA), to(#AD5EDB));
     background-image: linear-gradient(to bottom right, #E370DA, #D66CDA, #AD5EDB);
+    margin-top: 10px;
+    -webkit-box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
+            box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
   }
   .button a {
     color: white;
