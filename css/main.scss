@@ -108,37 +108,121 @@ $FRoboto : 'Roboto', sans-serif;
         width: 80%;
         font-size: 1.3em;
     }
-    .description #convenance{
+    .description #convenance
+    {
         position: relative;
         left:35px;
     }
 
 
     
-    .description p {
+    .description p
+    {
         margin-bottom: 15px;
         font-size: 1.1em;
     }
 
-    .button{
+    .button
+    {
         grid-area:b;
         padding:0.9em 1.5em;
         border-radius: 30px;
         background-image:linear-gradient(to bottom right,#E370DA,#D66CDA,#AD5EDB);
         margin-top:10px;
         box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
+        position: relative;
+        right:10px;
     }
 
-    .button a {
+    .button a
+    {
         color:white;
     }
     
     /* END OF SECTION -2 */
-    .section-3, .section-4 img
+
+    /* SECTION -3 */
+    .section-3
+    {
+       
+        margin-top:2em;
+        font-family: $FRoboto;
+
+            & header h1
+            {
+                font-size: 1.5em;
+                margin-bottom: 1.3em;
+                position:relative;
+                left:55px;
+                width:50%;
+            }
+
+    }
+
+   
+    .item {
+        display: flex;
+        gap: 30px;
+        background-color:#F6F6F6;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        margin-bottom: 15px;
+        padding: 1.5em 1.9em;
+        width:55%;
+        box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+        position: relative;
+        left: 65px;
+    
+            & h2 
+            {
+                font-size: 1em;
+            }
+
+            & span {
+                background-color:purple;
+                border-radius:80%;
+                padding: 0.3em 0.5em;
+                position:absolute;
+                left:-10px;
+                color:white;
+                font-size: 0.8em;
+                top:24px;
+                background-color:#9356DC;
+               
+            }
+
+            & .fas{
+                font-size: 1em;
+                position:relative;
+                top:1px;
+                color:gray;
+            }
+            
+            &:last-child:active{
+                background-color:#F5EDFF;
+
+                & .fa-store{
+                    color:#9356DC;
+                }
+            }
+            
+    }
+
+    /* END SECTION -3 */
+
+
+
+
+
+    .section-4 img
     {
         display:none;
     }
-
+    .section-4 {
+        background:#F0F0F0;
+    }
 
 }
 /* ADJUSTING SIZE AND POSITION OF ELEMENTS OF SECTION -2 */
@@ -154,4 +238,8 @@ $FRoboto : 'Roboto', sans-serif;
         font-size: 0.9em;
     }
     
+    .button{
+        position: relative;
+        right:0;
+    }
 }
