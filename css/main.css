@@ -100,22 +100,29 @@
     grid-area: b;
     padding: 0.9em 1.5em;
     border-radius: 30px;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#E370DA), color-stop(#D66CDA), to(#AD5EDB));
-    background-image: linear-gradient(to bottom right, #E370DA, #D66CDA, #AD5EDB);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), color-stop(#D66CDA), to(#AD5EDB));
+    background-image: linear-gradient(to bottom right, #FF79DA, #D66CDA, #AD5EDB);
     margin-top: 10px;
-    -webkit-box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
-            box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
     position: relative;
     right: 6px;
+    cursor: pointer;
   }
   .button a {
     color: white;
+  }
+  .button:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
+            box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
+    -webkit-transition: 900ms;
+    transition: 900ms;
   }
   /* END OF SECTION -2 */
   /* SECTION -3 */
   .section-3 {
     margin-top: 2em;
     font-family: "Roboto", sans-serif;
+    padding-bottom: 2em;
   }
   .functioning {
     display: -webkit-box;
@@ -184,6 +191,7 @@
   /* SECTION -4 */
   .section-4 {
     background: #F0F0F0;
+    padding-bottom: 3em;
   }
   .food_cards {
     display: -webkit-box;
