@@ -129,7 +129,7 @@ $FRoboto : 'Roboto', sans-serif;
         margin-top:10px;
         box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
         position: relative;
-        right:10px;
+        right:6px;
     }
 
     .button a
@@ -219,35 +219,98 @@ $FRoboto : 'Roboto', sans-serif;
     .section-4 {
         background:#F0F0F0;
     }
-
-    .food_cards{
+    
+    .food_cards
+    {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap:15px;
-    }
+        padding-top: 3em;
+        font-family: $FRoboto;
+        position: relative;
+        right:14px;
+            & h1 {
+                
+                font-size: 1.3em;
+               position: relative;
+               right:99px;
+            }
+
+            & h2{
+                font-size: 1.2em;
+            }
+
+
     
-    .item-2{
+    }
+
+    
+    .item-2
+{
         position:relative;
-        width: 280px;
+        /* Temporary size */
+        width: 315px;
         background-color: white;
         display: inline-block;
         border-top-right-radius: 20px;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
-    }
+        color:black;
+    
+            & .new_food
+            {
+                position: absolute;
+                right: 15px;
+                top:15px;
+                color:green;
+                background-color: $tertiary_color;
+                font-weight: bolder;
+                padding:0.6em;
+                font-size: 0.8em;
+            }
 
-    .item-2 img{
-        width: 100%;
-        object-fit: cover;
-        height: 150px;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
+            & .description_food
+            {
+                padding:10px 0px 5px 10px;
+                line-height: 24px;
 
-    }
+                    & p {
+
+                        font-size: 1em;
+                        padding-bottom:5px;
+                        line-height: 24px;
+                        }
+
+            }
+
+            & .heart_animation {
+                font-size: 1.6em;
+                position:absolute;
+                right:19px;
+                bottom:27px;
+            }
+
+            &:visited
+            {
+            color:black;
+            }
+
+            & img
+            {
+            width: 100%;
+            object-fit: cover;
+            height: 152px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            }
     
 }
+
+
+
+ }
 /* ADJUSTING SIZE AND POSITION OF ELEMENTS OF SECTION -2 ON MOBILE VERSION */
 @media screen and (min-width:0px) and (max-width:368px){
 
@@ -267,8 +330,10 @@ $FRoboto : 'Roboto', sans-serif;
     }
 }
 
-@media screen and (max-width:398px) {
-    .item {
+@media screen and (max-width:398px)
+{
+    .item 
+    {
         padding: 1.1em;
         position: relative;
         left:70px;
@@ -285,7 +350,58 @@ $FRoboto : 'Roboto', sans-serif;
     }
 
 
-    .functioning h1 {
+    .functioning h1
+    {
         margin-left:48px;
     }
+
+    .food_cards{
+        position: relative;
+        right:0;
+    
+    
+    & h2 {
+        font-size: 0.9em;
+    }
+
+    & h1 {
+        position: relative;
+        right:90px;
+    }
+}
+
+    .item-2
+    {
+        position: relative;
+        /* Temporary size */
+        width: 300px;
+            & .new_food{
+                position: absolute;
+                right: 15px;
+                top:15px;
+                color:green;
+                background-color: $tertiary_color;
+                font-weight: bolder;
+                padding:0.6em;
+                font-size: 0.8em;
+            }
+
+            & .description_food{
+                padding:10px 0px 5px 10px;
+                line-height: 20px;
+
+                    & p {
+                        font-size: 0.9em;
+                        padding-bottom:5px;
+                    }
+            }
+
+            & .heart_animation {
+                font-size: 1.4em;
+                position:absolute;
+                right:19px;
+                bottom:22px;
+            }
+    }
+
 }
