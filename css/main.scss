@@ -27,8 +27,6 @@ $FRoboto : 'Roboto', sans-serif;
 @media screen and (min-width:320px) and (max-width:767px)
 {
     
-    
-
     /* HEADER */
         #logo
         {
@@ -217,21 +215,41 @@ $FRoboto : 'Roboto', sans-serif;
 
     /* END SECTION -3 */
 
-
-
-
-
-    .section-4 img
-    {
-        display:none;
-    }
+    /* SECTION -4 */
     .section-4 {
         background:#F0F0F0;
     }
 
+    .food_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:15px;
+    }
+    
+    .item-2{
+        position:relative;
+        width: 280px;
+        background-color: white;
+        display: inline-block;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .item-2 img{
+        width: 100%;
+        object-fit: cover;
+        height: 150px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+
+    }
+    
 }
 /* ADJUSTING SIZE AND POSITION OF ELEMENTS OF SECTION -2 ON MOBILE VERSION */
-@media screen and (min-width:320px) and (max-width:368px){
+@media screen and (min-width:0px) and (max-width:368px){
 
     .description h1{
         position: relative;
