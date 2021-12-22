@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  list-style-type: none;
 }
 
 *:visited {
@@ -266,6 +267,71 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
+  /* END OF SECTION -4 */
+  /* FOOTER */
+  footer {
+    background-color: #353535;
+    color: white;
+  }
+  .more_information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    position: relative;
+    right: 4.5em;
+  }
+  .more_information h1 {
+    font-family: "Shrikhand", cursive;
+    margin-bottom: 0.5em;
+    position: relative;
+    right: 42px;
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+  .icon_description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    font-size: 1em;
+  }
+  .icon_description .fas {
+    position: relative;
+    top: 2px;
+    font-size: 0.9em;
+  }
+  .icon_description--2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    right: 20px;
+    font-size: 1em;
+  }
+  .icon_description--2 .fas {
+    position: relative;
+    top: 2px;
+    font-size: 0.9em;
+  }
+  .list {
+    position: relative;
+    right: 39px;
+    font-size: 1em;
+  }
+  .list li {
+    line-height: 30px;
+  }
+  /* END OF FOOTER */
 }
 
 /* ADJUSTING SIZE AND POSITION OF ELEMENTS OF SECTION -2 ON MOBILE VERSION */
@@ -340,6 +406,10 @@
     position: absolute;
     right: 19px;
     bottom: 22px;
+  }
+  .more_information {
+    position: relative;
+    right: 3em;
   }
 }
 /*# sourceMappingURL=main.css.map */
