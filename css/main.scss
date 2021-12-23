@@ -22,7 +22,8 @@ $white : white;
     list-style-type:none;
 }
 
-*:visited{
+*:visited
+{
     color:black;
 }
 
@@ -78,8 +79,8 @@ $white : white;
         display:grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-areas: 
-        "a a a"
-        "b b b";
+        "a a "
+        "b b ";
          justify-items: center;
         font-family: $FRoboto;
         padding:2rem;
@@ -91,7 +92,8 @@ $white : white;
         grid-area: a;
         padding:5px 0px;
 
-        & #selected_by {
+        & #selected_by
+        {
             position: relative;
             left:39px;
         }
@@ -148,6 +150,7 @@ $white : white;
     
     /* END OF SECTION -2 */
 
+
     /* SECTION -3 */
     .section-3
     {
@@ -177,6 +180,7 @@ $white : white;
     }
    
     .item {
+
         display: flex;
         gap: 30px;
         background-color:#F6F6F6;
@@ -191,40 +195,51 @@ $white : white;
         position: relative;
         left: 65px;
     
-            & h2 
-            {
-                font-size: 1em;
-            }
-
-            & span {
-                background-color:purple;
-                border-radius:80%;
-                padding: 0.3em 0.5em;
-                position:absolute;
-                left:-10px;
-                color:white;
-                font-size: 0.8em;
-                top:24px;
-                background-color:#9356DC;
-               
-            }
-
-            & .fas{
-                font-size: 1em;
-                position:relative;
-                top:1px;
-                color:gray;
-            }
-            
-            &:last-child:active{
-                background-color:#F5EDFF;
-
-                & .fa-store{
-                    color:#9356DC;
+                & h2 
+                {
+                    font-size: 1em;
+                    position: relative;
+                    right:10px;
                 }
-            }
+
+                & span
+                {
+                    background-color:purple;
+                    border-radius:80%;
+                    padding: 0.3em 0.5em;
+                    position:absolute;
+                    left:-10px;
+                    color:white;
+                    font-size: 0.8em;
+                    top:23px;
+                    background-color:#9356DC;
+
+                       
+                
+                }
+
+                & .fas
+                {
+                    font-size: 1em;
+                    position:relative;
+                    top:1px;
+                    color:gray;
+                }
+                
+                &:last-child:active
+                {
+                    background-color:#F5EDFF;
+
+                        & .fa-store
+                        {
+                            color:#9356DC;
+                        }
+
+                }
             
     }
+
+   
 
     /* END SECTION -3 */
 
@@ -244,19 +259,19 @@ $white : white;
         font-family: $FRoboto;
         position: relative;
         right:14px;
-            & h1 {
-                
+
+            & h1
+            { 
                 font-size: 1.3em;
                position: relative;
                right:99px;
             }
 
-            & h2{
+            & h2
+            {
                 font-size: 1.2em;
             }
 
-
-    
     }
 
     
@@ -290,16 +305,18 @@ $white : white;
                 padding:10px 0px 5px 10px;
                 line-height: 24px;
 
-                    & p {
+                    & p 
+                    {
 
                         font-size: 1em;
                         padding-bottom:5px;
                         line-height: 24px;
-                        }
+                     }
 
             }
 
-            & .heart_animation {
+            & .heart_animation
+            {
                 font-size: 1.6em;
                 position:absolute;
                 right:19px;
@@ -330,55 +347,64 @@ $white : white;
 
     /* FOOTER */
 
-    footer {
+    footer
+    {
         background-color: $bg-footer;
         color:$white;
     }
+
     .more_information
     {
+            display: flex;
+            flex-direction: column;
+            font-family: $FRoboto;
+            align-items: center;
+            gap:10px;
+            position: relative;
+            right: 4.5em;
+            
+            & h1
+            {
+                font-family: $FShrikhand;
+                margin-bottom: 0.5em;
+                position:relative;
+                right:42px;
+                margin-top: 1em;
+                font-size: 1.2em;
+
+            }
+    }
+
+    .icon_description
+    {
         display: flex;
-        flex-direction: column;
-        font-family: $FRoboto;
-        align-items: center;
         gap:10px;
-        position: relative;
-        right: 4.5em;
-        
-        & h1 {
-            font-family: $FShrikhand;
-            margin-bottom: 0.5em;
+        font-size: 1em;
+
+                & .fas
+                {
+                    position: relative;
+                    top:2px;
+                    font-size: 0.9em;
+                }
+
+    }
+
+    .icon_description--2
+    {
+            display:flex;
+            gap:10px;
             position:relative;
-            right:42px;
-            margin-top: 1em;
-            font-size: 1.2em;
-            }
-    }
+            right:20px;
+            font-size: 1em;
 
-    .icon_description{
-        display: flex;
-        gap:10px;
-        font-size: 1em;
-            & .fas {
-                position: relative;
-                top:2px;
-                font-size: 0.9em;
-            }
-
-    }
-
-    .icon_description--2{
-        display:flex;
-        gap:10px;
-        position:relative;
-        right:20px;
-        font-size: 1em;
-
-            & .fas{
-                position: relative;
-                top:2px;
-                font-size: 0.9em;
-                
-            }
+                & .fas
+                {
+                    position: relative;
+                    top:2px;
+                    font-size: 0.9em;
+                    
+                }
     }
 
     .list{
@@ -395,89 +421,101 @@ $white : white;
 
  }
 /* ADJUSTING SIZE AND POSITION OF ELEMENTS OF SECTION -2 ON MOBILE VERSION */
-@media screen and (min-width:0px) and (max-width:368px){
+@media screen and (min-width:0px) and (max-width:368px)
+{
 
-    .description h1{
-        position: relative;
-        font-size: 1.1em;
-        left:35px;
-    } 
+        .description h1
+        {
+            position: relative;
+            font-size: 1.1em;
+            left:35px;
+        } 
 
-    .description p {
-        font-size: 0.9em;
-    }
-    
-    .button{
-        position: relative;
-        right:0;
-    }
+        .description p 
+        {
+            font-size: 0.9em;
+        }
+        
+        .button
+        {
+            position: relative;
+            right:0;
+        }
+
 }
 
 @media screen and (max-width:398px)
 {
-    .item 
-    {
-        padding: 1.1em;
-        position: relative;
-        left:70px;
-
-            & span {
-                position:absolute;
-                top:17px;
-            }
-
-            & .fas {
-                position:relative;
-                left:9px;
-            }
-    }
-
-
-    .functioning h1
-    {
-        margin-left:48px;
-    }
-
-    .food_cards
-    {
-     position: relative;
-     right:0;
-    
-    
-        & h2
+        .item 
         {
-            font-size: 0.9em;
+            padding: 1.5em 1.1em 1.4em 1.1em;
+            position: relative;
+            left:70px;
+
+                & span
+                {
+                    position:absolute;
+                    top:21px;
+                }
+
+
+
+                & .fas
+                {
+                    position:relative;
+                    left:9px;
+                }
+
         }
 
-        & h1
+ 
+
+
+        .functioning h1
+        {
+            margin-left:48px;
+        }
+
+        .food_cards
+        {
+        position: relative;
+        right:0;
+        
+                & h2
+                {
+                    font-size: 0.9em;
+                }
+
+                & h1
+                {
+                    position: relative;
+                    right:90px;
+                }
+
+        }
+
+        .item-2
         {
             position: relative;
-            right:90px;
-        }
-    }
+            /* Temporary size */
+            width: 300px;
 
-    .item-2
-    {
-        position: relative;
-        /* Temporary size */
-        width: 300px;
+                    & .new_food
+                    {
+                        position: absolute;
+                        right: 15px;
+                        top:15px;
+                        color:green;
+                        background-color: $tertiary_color;
+                        font-weight: bolder;
+                        padding:0.6em;
+                        font-size: 0.8em;
+                    }
 
-            & .new_food
-            {
-                position: absolute;
-                right: 15px;
-                top:15px;
-                color:green;
-                background-color: $tertiary_color;
-                font-weight: bolder;
-                padding:0.6em;
-                font-size: 0.8em;
-            }
-
-            & .description_food
-            {
-                padding:10px 0px 5px 10px;
-                line-height: 20px;
+                    & .description_food
+                    {
+                        padding:10px 0px 5px 10px;
+                        line-height: 20px;
 
                     & p
                     {
@@ -485,21 +523,21 @@ $white : white;
                         padding-bottom:5px;
                     }
 
-            }
+                    }
 
-            & .heart_animation
-            {
-                font-size: 1.4em;
-                position:absolute;
-                right:19px;
-                bottom:22px;
-            }
-    }
+                    & .heart_animation
+                    {
+                        font-size: 1.4em;
+                        position:absolute;
+                        right:19px;
+                        bottom:22px;
+                    }
+        }
 
-    .more_information
-    {
-        
-        position: relative;
-        right: 3em;
-    }
+        .more_information
+        {
+            position: relative;
+            right: 3em;
+        }
+
 }

@@ -61,7 +61,7 @@
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "a a a" "b b b";
+        grid-template-areas: "a a " "b b ";
     justify-items: center;
     font-family: "Roboto", sans-serif;
     padding: 2rem;
@@ -70,7 +70,7 @@
   .description {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 2;
     grid-area: a;
     padding: 5px 0px;
   }
@@ -97,7 +97,7 @@
   .button {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 3;
+    -ms-grid-column-span: 2;
     grid-area: b;
     padding: 0.9em 1.5em;
     border-radius: 30px;
@@ -164,6 +164,8 @@
   }
   .item h2 {
     font-size: 1em;
+    position: relative;
+    right: 10px;
   }
   .item span {
     background-color: purple;
@@ -173,7 +175,7 @@
     left: -10px;
     color: white;
     font-size: 0.8em;
-    top: 24px;
+    top: 23px;
     background-color: #9356DC;
   }
   .item .fas {
@@ -352,13 +354,13 @@
 
 @media screen and (max-width: 398px) {
   .item {
-    padding: 1.1em;
+    padding: 1.5em 1.1em 1.4em 1.1em;
     position: relative;
     left: 70px;
   }
   .item span {
     position: absolute;
-    top: 17px;
+    top: 21px;
   }
   .item .fas {
     position: relative;
