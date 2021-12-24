@@ -11,81 +11,44 @@
   list-style-type: none;
 }
 
-/* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  /* FOOTER 
+*:visited {
+  color: #353535;
+}
 
-        footer
-        {
-            background-color: $bg-footer;
-            color:$white;
-        }
-    
-        .more_information
-        {
-                display: flex;
-                flex-direction: column;
-                font-family: $FRoboto;
-                align-items: center;
-                gap:10px;
-                position: relative;
-                right: 4.5em;
-                
-                & h1
-                {
-                    font-family: $FShrikhand;
-                    margin-bottom: 0.5em;
-                    position:relative;
-                    right:42px;
-                    margin-top: 1em;
-                    font-weight:500;
-                    font-size: 1.2em;
-                }
-        }
-    
-        .icon_description
-        {
-            display: flex;
-            gap:10px;
-            font-size: 1em;
-    
-                    & .fas
-                    {
-                        position: relative;
-                        top:2px;
-                        font-size: 0.9em;
-                    }
-    
-        }
-    
-        .icon_description--2
-        {
-                display:flex;
-                gap:10px;
-                position:relative;
-                right:20px;
-                font-size: 1em;
-    
-                    & .fas
-                    {
-                        position: relative;
-                        top:2px;
-                        font-size: 0.9em;
-                        
-                    }
-        }
-    
-        .list{
-            position: relative;
-            right:39px;
-            font-size: 1em;
-    
-                & li {
-                    line-height: 30px;
-                }
-        }
-    
-    
-        */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  /* HEADER */
+  .back_to_homepage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "Shrikhand", cursive;
+    font-weight: thin;
+    padding-block: 0.6em;
+  }
+  .back_to_homepage .fas {
+    font-size: 1.5em;
+    position: relative;
+    right: 1.5em;
+    top: 0.3em;
+  }
+  .back_to_homepage h1 {
+    font-size: 1.5em;
+  }
+  /* END OF HEADER */
+  .container {
+    width: 100%;
+  }
+  .container .banner {
+    width: 100%;
+  }
+  .container .banner img {
+    width: 100%;
+  }
+  footer {
+    display: none;
+  }
 }
 /*# sourceMappingURL=la_palette_du_goût.css.map */
