@@ -30,6 +30,8 @@ $white : white;
 /* MOBILE */
 @media screen and (min-width:320px) and (max-width:767px)
 {
+
+   
     
     /* HEADER */
         #logo
@@ -48,7 +50,7 @@ $white : white;
   
     .location
     {
-        background-color: #E8E8E8;
+        background-color: #EAEAEA;
         display: flex;
         justify-content: center;
         font-family: $FRoboto;
@@ -191,7 +193,7 @@ $white : white;
         margin-bottom: 15px;
         padding: 1.5em 1.9em;
         width:240px;
-        box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+        box-shadow:5px 5px 10px rgba(0,0,0,0.11);
         position: relative;
         left: 65px;
     
@@ -245,7 +247,7 @@ $white : white;
 
     /* SECTION -4 */
     .section-4 {
-        background:#F0F0F0;
+        background:#F6F6F6;
         padding-bottom: 3em;
     }
     
@@ -286,6 +288,7 @@ $white : white;
         border-top-left-radius: 20px;
         border-bottom-right-radius: 20px;
         border-bottom-left-radius: 20px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.21);
         color:black;
     
             & .new_food
@@ -302,7 +305,7 @@ $white : white;
 
             & .description_food
             {
-                padding:10px 0px 5px 10px;
+                padding:10px 0px 5px 14px;
                 line-height: 24px;
 
                     & p 
@@ -322,9 +325,9 @@ $white : white;
                 right:19px;
                 bottom:27px;
 
-                    
-                
             }
+
+        
 
             &:visited
             {
@@ -370,8 +373,8 @@ $white : white;
                 position:relative;
                 right:42px;
                 margin-top: 1em;
+                font-weight:500;
                 font-size: 1.2em;
-
             }
     }
 
@@ -514,7 +517,7 @@ $white : white;
 
                     & .description_food
                     {
-                        padding:10px 0px 5px 10px;
+                        padding:10px 0px 5px 14px;
                         line-height: 20px;
 
                     & p
