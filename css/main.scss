@@ -133,22 +133,26 @@ $simulate_link_presence:pointer;
         grid-area:b;
         padding:0.9em 1.5em;
         border-radius: 30px;
-        background-image:linear-gradient(to bottom right,$secondary_color,#D66CDA,#AD5EDB);
+        background-image:linear-gradient($secondary_color,$primary_color);
         margin-top:10px;
         position: relative;
         right:6px;
         cursor: pointer;
         
+        box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
+        
+        
             & a
             {
                 color:white;
             }
-            
+            /*
             &:hover{
                 opacity: 0.9;
                 box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
                 transition:900ms;
             }
+            */
     }
     
     /* END OF SECTION -2 */
