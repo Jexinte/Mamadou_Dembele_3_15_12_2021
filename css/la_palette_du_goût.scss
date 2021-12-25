@@ -13,6 +13,8 @@ $FRoboto : 'Roboto', sans-serif;
 $bg-food_menu:#F6F6F6;
 $bg-footer: #353535;
 $white : white;
+$item_border_radius:20px;
+$item_margin_bottom:.8em;
 
 
 
@@ -82,17 +84,18 @@ $white : white;
         background-color:$bg-food_menu;
         padding-inline:1.5em;
         padding-top: 2em;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
         z-index: 1;
         position: relative;
         bottom:10em;
         border-top-right-radius:50px;
         border-top-left-radius:50px;
+        display:flex;
+        flex-direction: column;
+        
             & header
             {
                 display:flex;
+                justify-content: center;
                     & h1
                     {
                         font-family: $FShrikhand;
@@ -109,6 +112,93 @@ $white : white;
 
             }
     }
+
+    .starter{
+        
+            & .starter--title{
+                font-family:$FRoboto;
+                font-weight: 500;
+                font-size: 1.2em;
+                position: relative;
+                left:.6em;
+                margin-bottom:.8em;
+            }
+            & .item{
+                display:flex;
+                background-color:white;
+                border-radius: $item_border_radius;
+                padding:1em;
+                box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+                margin-bottom:$item_margin_bottom;
+            }
+    }
+
+
+    .main_course{
+
+        & .main_course--title{
+            font-family:$FRoboto;
+            font-weight: 500;
+            font-size: 1.2em;
+            position: relative;
+            left:.6em;
+            margin-bottom:.8em;
+            margin-top: .8em;
+        }
+        & .item{
+            display:flex;
+            background-color:white;
+            border-radius: $item_border_radius;
+            padding:1em;
+            margin-bottom: $item_margin_bottom;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+        }
+    }
+    .desserts{
+
+        & .desserts--title
+        {
+            font-family:$FRoboto;
+            font-weight: 500;
+            font-size: 1.2em;
+            position: relative;
+            left:.6em;
+            margin-bottom:.8em;
+            margin-top: .8em;
+        }
+
+        & .item
+        {
+            display:flex;
+            background-color:white;
+            border-radius:$item_border_radius;
+            padding:1em;
+            margin-bottom: $item_margin_bottom;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+        }
+    }
+
+    .button{
+
+        padding:0.9em 1.5em;
+        border-radius: 30px;
+        background-image:linear-gradient(to bottom right,$secondary_color,#D66CDA,#AD5EDB);
+        margin-top:10px;
+        position: relative;
+        cursor: pointer;
+        text-align: center;
+            & a
+            {
+                color:white;
+            }
+            
+            &:hover{
+                opacity: 0.9;
+                box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
+                transition:900ms;
+            }
+    }
+    
     /* END OF MENU */
 
     footer
