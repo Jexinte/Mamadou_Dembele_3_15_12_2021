@@ -11,7 +11,11 @@
   list-style-type: none;
 }
 
-*:visited {
+a {
+  color: #353535;
+}
+
+a:visited {
   color: #353535;
 }
 
@@ -52,13 +56,12 @@
   /* FOOD_MENU */
   .food_menu {
     background-color: #F6F6F6;
-    padding-inline: 1.5em;
+    padding-inline: .8em;
     padding-top: 2em;
     z-index: 1;
-    position: relative;
-    bottom: 10em;
-    border-top-right-radius: 50px;
-    border-top-left-radius: 50px;
+    margin-top: -2em;
+    border-top-right-radius: 31px;
+    border-top-left-radius: 31px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -66,30 +69,50 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
+    margin-bottom: 4em;
   }
   .food_menu header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    position: relative;
+    left: .8em;
+    margin-bottom: 2em;
+    font-size: .8em;
   }
   .food_menu header h1 {
     font-family: "Shrikhand", cursive;
     font-weight: 500;
-    font-size: 1.8em;
   }
   .food_menu header .far {
     font-size: 1.8em;
     position: relative;
     top: 0.20em;
     left: 1.2em;
+    font-weight: 100;
+  }
+  .check_validate {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    background-color: #99E2D0;
+    padding: 2.08em;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 16px;
+    top: 0;
+  }
+  .check_validate .fa-check-circle {
+    color: white;
+  }
+  /* STARTER */
+  .starter {
+    font-family: "Roboto", sans-serif;
   }
   .starter .starter--title {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.1em;
     position: relative;
     left: .6em;
     margin-bottom: .8em;
@@ -104,11 +127,25 @@
     -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
     margin-bottom: 0.8em;
+    position: relative;
+    font-size: .8em;
+  }
+  .starter .item .item--description h2 {
+    margin-bottom: .2em;
+    font-weight: 600;
+  }
+  .starter .item .item__price {
+    position: absolute;
+    right: 2em;
+    top: 3em;
+    font-weight: bold;
+  }
+  .main_course {
+    font-family: "Roboto", sans-serif;
   }
   .main_course .main_course--title {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: 1.2em;
+    font-size: 1.1em;
     position: relative;
     left: .6em;
     margin-bottom: .8em;
@@ -121,12 +158,27 @@
     background-color: white;
     border-radius: 20px;
     padding: 1em;
-    margin-bottom: 0.8em;
     -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
+    margin-bottom: 0.8em;
+    position: relative;
+    font-size: .8em;
+  }
+  .main_course .item .item--description h2 {
+    margin-bottom: .2em;
+    font-weight: 600;
+  }
+  .main_course .item .item__price {
+    position: absolute;
+    right: 2em;
+    top: 3em;
+    font-weight: bold;
+  }
+  .desserts {
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 2em;
   }
   .desserts .desserts--title {
-    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.2em;
     position: relative;
@@ -141,33 +193,107 @@
     background-color: white;
     border-radius: 20px;
     padding: 1em;
-    margin-bottom: 0.8em;
     -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
+    margin-bottom: 0.8em;
+    position: relative;
+    font-size: .8em;
+  }
+  .desserts .item .item--description h2 {
+    margin-bottom: .2em;
+    font-weight: 600;
+  }
+  .desserts .item .item__price {
+    position: absolute;
+    right: 2em;
+    top: 3em;
+    font-weight: bold;
   }
   .button {
     padding: 0.9em 1.5em;
     border-radius: 30px;
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), color-stop(#D66CDA), to(#AD5EDB));
-    background-image: linear-gradient(to bottom right, #FF79DA, #D66CDA, #AD5EDB);
+    /* Temporary */
+    background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     margin-top: 10px;
     position: relative;
-    cursor: pointer;
     text-align: center;
+    cursor: pointer;
+    -webkit-box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
+            box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
   }
   .button a {
     color: white;
   }
-  .button:hover {
-    opacity: 0.9;
-    -webkit-box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
-            box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
-    -webkit-transition: 900ms;
-    transition: 900ms;
-  }
   /* END OF MENU */
+  /* FOOTER */
   footer {
-    display: none;
+    background-color: #353535;
+    color: white;
   }
+  .more_information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    gap: 10px;
+    margin-left: 4em;
+  }
+  .more_information h1 {
+    font-family: "Shrikhand", cursive;
+    margin-bottom: 0.5em;
+    position: relative;
+    right: 42px;
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  .icon_description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    font-size: 1em;
+    position: relative;
+    right: 2.5em;
+    cursor: pointer;
+  }
+  .icon_description .fas {
+    position: relative;
+    top: 2px;
+    font-size: 0.9em;
+  }
+  .icon_description--2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    right: 2.5em;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .icon_description--2 .fas {
+    position: relative;
+    top: 2px;
+    font-size: 0.9em;
+  }
+  .list {
+    position: relative;
+    right: 39px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  .list li {
+    line-height: 30px;
+  }
+  /* END OF FOOTER */
 }
+
+/* END OF MEDIA QUERIES */
 /*# sourceMappingURL=la_palette_du_goût.css.map */
