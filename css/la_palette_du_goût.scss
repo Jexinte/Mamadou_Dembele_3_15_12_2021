@@ -33,9 +33,7 @@ $item_margin_bottom:.8em;
 
 @media screen and (min-width: 320px) and (max-width:767px)
 {
-    body{
-        display:none;
-    }
+    
 
    /* HEADER */
 
@@ -114,6 +112,7 @@ $item_margin_bottom:.8em;
                         left:1.2em;
                     }
 
+                    
             }
     }
 
@@ -132,7 +131,7 @@ $item_margin_bottom:.8em;
                 background-color:white;
                 border-radius: $item_border_radius;
                 padding:1em;
-                box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.11);
                 margin-bottom:$item_margin_bottom;
             }
     }
@@ -155,7 +154,8 @@ $item_margin_bottom:.8em;
             border-radius: $item_border_radius;
             padding:1em;
             margin-bottom: $item_margin_bottom;
-            box-shadow: 5px 5px 10px rgb(0 0 0 / 0.11);
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.11);
+         
         }
     }
     .desserts{
@@ -178,7 +178,8 @@ $item_margin_bottom:.8em;
             border-radius:$item_border_radius;
             padding:1em;
             margin-bottom: $item_margin_bottom;
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.11);
+          
         }
     }
 

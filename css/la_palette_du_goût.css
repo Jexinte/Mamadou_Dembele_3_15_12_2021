@@ -101,8 +101,8 @@
     background-color: white;
     border-radius: 20px;
     padding: 1em;
-    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
     margin-bottom: 0.8em;
   }
   .main_course .main_course--title {
@@ -122,8 +122,8 @@
     border-radius: 20px;
     padding: 1em;
     margin-bottom: 0.8em;
-    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
   }
   .desserts .desserts--title {
     font-family: "Roboto", sans-serif;
@@ -142,8 +142,8 @@
     border-radius: 20px;
     padding: 1em;
     margin-bottom: 0.8em;
-    -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11);
   }
   .button {
     padding: 0.9em 1.5em;
