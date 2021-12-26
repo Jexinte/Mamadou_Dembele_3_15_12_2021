@@ -12,6 +12,7 @@ $FShrikhand: 'Shrikhand', cursive;
 $FRoboto : 'Roboto', sans-serif;
 $bg-footer: #353535;
 $white : white;
+$simulate_link_presence:pointer;
 
 
 *
@@ -132,22 +133,26 @@ $white : white;
         grid-area:b;
         padding:0.9em 1.5em;
         border-radius: 30px;
-        background-image:linear-gradient(to bottom right,$secondary_color,#D66CDA,#AD5EDB);
+        /* Temporary */
+        background-image:linear-gradient(to bottom right,$secondary_color,$primary_color);
         margin-top:10px;
         position: relative;
         right:6px;
         cursor: pointer;
+        box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
+        
         
             & a
             {
                 color:white;
             }
-            
+            /*
             &:hover{
                 opacity: 0.9;
                 box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
                 transition:900ms;
             }
+            */
     }
     
     /* END OF SECTION -2 */
@@ -167,9 +172,11 @@ $white : white;
 
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /*align-items: center;*/
         position: relative;
-        right:70px;
+        /*right:70px;*/
+        padding-left: 23px;
+        padding-right: 15px;
 
                 & h1
                 {
@@ -192,10 +199,10 @@ $white : white;
         border-bottom-left-radius: 20px;
         margin-bottom: 15px;
         padding: 1.5em 1.9em;
-        width:240px;
+      
         box-shadow:5px 5px 10px rgba(0,0,0,0.11);
         position: relative;
-        left: 65px;
+       
     
                 & h2 
                 {
@@ -255,24 +262,23 @@ $white : white;
     {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap:15px;
         padding-top: 3em;
         font-family: $FRoboto;
-        position: relative;
-        right:14px;
-
+        padding-right: 16px;
+        padding-left:14px;
             & h1
             { 
                 font-size: 1.3em;
                position: relative;
-               right:99px;
+               left:4px;
             }
 
             & h2
             {
                 font-size: 1.2em;
             }
+            
 
     }
 
@@ -280,8 +286,6 @@ $white : white;
     .item-2
 {
         position:relative;
-        /* Temporary size */
-        width: 315px;
         background-color: white;
         display: inline-block;
         border-top-right-radius: 20px;
@@ -361,11 +365,9 @@ $white : white;
             display: flex;
             flex-direction: column;
             font-family: $FRoboto;
-            align-items: center;
             gap:10px;
-            position: relative;
-            right: 4.5em;
-            
+           margin-left:4em;
+    
             & h1
             {
                 font-family: $FShrikhand;
@@ -375,6 +377,7 @@ $white : white;
                 margin-top: 1em;
                 font-weight:500;
                 font-size: 1.2em;
+                cursor: $simulate_link_presence;
             }
     }
 
@@ -383,12 +386,15 @@ $white : white;
         display: flex;
         gap:10px;
         font-size: 1em;
-
+        position: relative;
+        right:2.5em;
+        cursor: $simulate_link_presence;
                 & .fas
                 {
                     position: relative;
                     top:2px;
                     font-size: 0.9em;
+                    
                 }
 
     }
@@ -398,14 +404,16 @@ $white : white;
             display:flex;
             gap:10px;
             position:relative;
-            right:20px;
+            right:2.5em;
             font-size: 1em;
+            cursor: $simulate_link_presence;
 
                 & .fas
                 {
                     position: relative;
                     top:2px;
                     font-size: 0.9em;
+                   
                     
                 }
     }
@@ -414,6 +422,7 @@ $white : white;
         position: relative;
         right:39px;
         font-size: 1em;
+        cursor: $simulate_link_presence;
 
             & li {
                 line-height: 30px;
@@ -443,104 +452,6 @@ $white : white;
         {
             position: relative;
             right:0;
-        }
-
-}
-
-@media screen and (max-width:398px)
-{
-        .item 
-        {
-            padding: 1.5em 1.1em 1.4em 1.1em;
-            position: relative;
-            left:70px;
-
-                & span
-                {
-                    position:absolute;
-                    top:21px;
-                }
-
-
-
-                & .fas
-                {
-                    position:relative;
-                    left:9px;
-                }
-
-        }
-
- 
-
-
-        .functioning h1
-        {
-            margin-left:48px;
-        }
-
-        .food_cards
-        {
-        position: relative;
-        right:0;
-        
-                & h2
-                {
-                    font-size: 0.9em;
-                }
-
-                & h1
-                {
-                    position: relative;
-                    right:90px;
-                }
-
-        }
-
-        .item-2
-        {
-            position: relative;
-            /* Temporary size */
-            width: 300px;
-
-                    & .new_food
-                    {
-                        position: absolute;
-                        right: 15px;
-                        top:15px;
-                        color:green;
-                        background-color: $tertiary_color;
-                        font-weight: bolder;
-                        padding:0.6em;
-                        font-size: 0.8em;
-                    }
-
-                    & .description_food
-                    {
-                        padding:10px 0px 5px 14px;
-                        line-height: 20px;
-
-                    & p
-                    {
-                        font-size: 0.9em;
-                        padding-bottom:5px;
-                    }
-
-                    }
-
-                    & .heart_animation
-                    {
-                        font-size: 1.4em;
-                        position:absolute;
-                        right:19px;
-                        bottom:22px;
-                    }
-        }
-
-        .more_information
-        {
-            position: relative;
-            right: 3em;
         }
 
 }
