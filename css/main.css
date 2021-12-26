@@ -329,6 +329,7 @@
     position: relative;
     right: 39px;
     font-size: 1em;
+    margin-bottom: 2em;
     cursor: pointer;
   }
   .list li {

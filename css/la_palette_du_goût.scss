@@ -15,6 +15,7 @@ $bg-footer: #353535;
 $white : white;
 $item_border_radius:20px;
 $item_margin_bottom:.8em;
+$simulate_link_presence:pointer;
 
 
 
@@ -26,13 +27,16 @@ $item_margin_bottom:.8em;
 }
 
 
-*:visited
+a{
+    color:#353535;}
+a:visited
 {
-    color:#353535;
+   color:#353535;
 }
-
 @media screen and (min-width: 320px) and (max-width:767px)
 {
+    
+
    /* HEADER */
 
     .back_to_homepage
@@ -80,130 +84,305 @@ $item_margin_bottom:.8em;
     /* END OF CONTAINER */
 
     /* FOOD_MENU */
-    .food_menu{
+    .food_menu
+    {
         background-color:$bg-food_menu;
-        padding-inline:1.5em;
+        padding-inline:.8em;
         padding-top: 2em;
         z-index: 1;
-        position: relative;
-        bottom:10em;
-        border-top-right-radius:50px;
-        border-top-left-radius:50px;
+        margin-top: -2em;
+        border-top-right-radius:31px;
+        border-top-left-radius:31px;
         display:flex;
         flex-direction: column;
+        position: relative;
+        margin-bottom: 4em;
         
             & header
             {
                 display:flex;
-                justify-content: center;
+                position: relative;
+                left: .8em;
+                margin-bottom: 2em;
+                font-size: .8em;
                     & h1
                     {
                         font-family: $FShrikhand;
                         font-weight: 500;
-                        font-size: 1.8em;
                     }
 
                     & .far{
                         font-size: 1.8em;
-                        position: relative;
+                        position: absolute;
                         top:0.20em;
-                        left:1.2em;
+                        right:1.2em;
+                        font-weight: 100;
+                    
                     }
 
+                    
             }
+
+        }
+        
+        
+     .check_validate
+     {
+            visibility:hidden;
+            position: absolute;
+            right:0;
+            background-color:$tertiary_color;
+            padding:2.08em;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 16px;
+            top:0;
+
+               & .fa-check-circle
+               {
+                    color:white;
+               }
     }
+    /* STARTER */
 
     .starter{
-        
+        font-family: $FRoboto;
+
             & .starter--title{
                 font-family:$FRoboto;
                 font-weight: 500;
-                font-size: 1.2em;
+                font-size: 1.1em;
                 position: relative;
                 left:.6em;
                 margin-bottom:.8em;
+                border-bottom:1px solid $tertiary_color;
+                border-width: 0.21em;
+                padding-bottom: .3em;
+                width: 2.6em;
             }
             & .item{
                 display:flex;
                 background-color:white;
                 border-radius: $item_border_radius;
                 padding:1em;
-                box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+                box-shadow: 5px 5px 10px rgba(0,0,0,0.11);
                 margin-bottom:$item_margin_bottom;
+                position:relative;
+                font-size: .8em;
+
+                   & .item--description h2
+                    {
+                        margin-bottom: .2em;
+                        font-weight: 600;
+                    }
+
+                   & .item__price
+                    {
+                        position: absolute;
+                        right:2em;
+                        top:3em;
+                        font-weight: bold;
+
+                    }
+                }
             }
-    }
 
-
-    .main_course{
-
-        & .main_course--title{
-            font-family:$FRoboto;
-            font-weight: 500;
-            font-size: 1.2em;
-            position: relative;
-            left:.6em;
-            margin-bottom:.8em;
-            margin-top: .8em;
-        }
-        & .item{
-            display:flex;
-            background-color:white;
-            border-radius: $item_border_radius;
-            padding:1em;
-            margin-bottom: $item_margin_bottom;
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-        }
-    }
-    .desserts{
-
-        & .desserts--title
-        {
-            font-family:$FRoboto;
-            font-weight: 500;
-            font-size: 1.2em;
-            position: relative;
-            left:.6em;
-            margin-bottom:.8em;
-            margin-top: .8em;
-        }
-
-        & .item
-        {
-            display:flex;
-            background-color:white;
-            border-radius:$item_border_radius;
-            padding:1em;
-            margin-bottom: $item_margin_bottom;
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-        }
-    }
-
-    .button{
-
-        padding:0.9em 1.5em;
-        border-radius: 30px;
-        background-image:linear-gradient(to bottom right,$secondary_color,#D66CDA,#AD5EDB);
-        margin-top:10px;
-        position: relative;
-        cursor: pointer;
-        text-align: center;
-            & a
-            {
-                color:white;
-            }
+     
             
-            &:hover{
-                opacity: 0.9;
-                box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
-                transition:900ms;
-            }
-    }
-    
-    /* END OF MENU */
+                            .main_course
+                            {
+                                font-family:$FRoboto;
+                        
+                                    & .main_course--title
+                                    {
+                                        font-weight: 500;
+                                        font-size: 1.1em;
+                                        position: relative;
+                                        left:.6em;
+                                        margin-bottom:.8em;
+                                        margin-top: .8em;
+                                        border-bottom:1px solid $tertiary_color;
+                                        border-width: 0.21em;
+                                        padding-bottom: .3em;
+                                        width: 2.5em;
+                                    }
+                        
+                                    & .item
+                                    {
+                                        display:flex;
+                                        background-color:white;
+                                        border-radius: $item_border_radius;
+                                        padding:1em;
+                                        box-shadow: 5px 5px 10px rgba(0,0,0,0.11);
+                                        margin-bottom:$item_margin_bottom;
+                                        position:relative;
+                                        font-size: .8em;
+                        
+                                            & .item--description h2
+                                                {
+                                                    margin-bottom: .2em;
+                                                    font-weight: 600;
+                                                }
+                        
+                                            & .item__price
+                                                {
+                                                    position: absolute;
+                                                    right:2em;
+                                                    top:3em;
+                                                    font-weight: bold;
+                                                }
+                                    }
+                            }
+                            .desserts{
+                        
+                                font-family:$FRoboto;
+                                margin-bottom: 2em;
+                                & .desserts--title
+                                {
+                                    font-weight: 500;
+                                    font-size: 1.2em;
+                                    position: relative;
+                                    left:.6em;
+                                    margin-bottom:.8em;
+                                    margin-top: .8em;
+                                    border-bottom:1px solid $tertiary_color;
+                                    border-width: 0.21em;
+                                    padding-bottom: .3em;
+                                    width: 2.5em;
+                                }
+                        
+                                & .item
+                                {
+                                    display:flex;
+                                    background-color:white;
+                                    border-radius: $item_border_radius;
+                                    padding:1em;
+                                    box-shadow: 5px 5px 10px rgba(0,0,0,0.11);
+                                    margin-bottom:$item_margin_bottom;
+                                    position:relative;
+                                    font-size: .8em;
+                        
+                                        & .item--description h2
+                                            {
+                                                margin-bottom: .2em;
+                                                font-weight: 600;
+                                            }
+                        
+                                        & .item__price
+                                            {
+                                                position: absolute;
+                                                right:2em;
+                                                top:3em;
+                                                font-weight: bold;
+                                            }
+                                }
+                            }
+                        
+                            .button{
+                        
+                                padding:0.9em 1.5em;
+                                border-radius: 30px;
+                                /* Temporary */
+                                background-image:linear-gradient(to bottom right,$secondary_color,$primary_color);
+                                margin-top:10px;
+                                position: relative;
+                                text-align: center;
+                                cursor: $simulate_link_presence;
+                                box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
+        
+        
+                                    & a
+                                    {
+                                        color:white;
+                                    }
+                                    
+                                 
+                            }
+                            
+                            /* END OF MENU */
+                        
+                        /* FOOTER */
 
     footer
     {
-        display: none;
+        background-color: $bg-footer;
+        color:$white;
     }
 
-}
+    .more_information
+    {
+            display: flex;
+            flex-direction: column;
+            font-family: $FRoboto;
+            gap:10px;
+           margin-left:4em;
+    
+            & h1
+            {
+                font-family: $FShrikhand;
+                margin-bottom: 0.5em;
+                position:relative;
+                right:42px;
+                margin-top: 1em;
+                font-weight:500;
+                font-size: 1.2em;
+                cursor: $simulate_link_presence;
+            }
+    }
+
+    .icon_description
+    {
+        display: flex;
+        gap:10px;
+        font-size: 1em;
+        position: relative;
+        right:2.5em;
+        cursor: $simulate_link_presence;
+                & .fas
+                {
+                    position: relative;
+                    top:2px;
+                    font-size: 0.9em;
+                    
+                }
+
+    }
+
+    .icon_description--2
+    {
+            display:flex;
+            gap:10px;
+            position:relative;
+            right:2.5em;
+            font-size: 1em;
+            cursor: $simulate_link_presence;
+
+                & .fas
+                {
+                    position: relative;
+                    top:2px;
+                    font-size: 0.9em;
+                   
+                    
+                }
+    }
+
+    .list{
+        position: relative;
+        right:39px;
+        font-size: 1em;
+        cursor: $simulate_link_presence;
+        margin-bottom: 2em;
+            & li
+            {
+                line-height: 30px;
+            }
+    }
+
+    /* END OF FOOTER */
+
+                        
+                }
+                /* END OF MEDIA QUERIES */
+
+
+
