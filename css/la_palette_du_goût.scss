@@ -132,30 +132,40 @@ a:visited
             position: absolute;
             right:0;
             background-color:$tertiary_color;
-            padding:2.08em;
+            padding:1.73em;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 16px;
             top:0;
             transition-property: padding-right,transform;
             transition-duration:700ms;
-            transition-timing-function:ease;
-
+            transition-timing-function:ease-out;
+/*
                &:hover
                {
                     padding-right:8em;
                }
-
+*/
                & .fa-check-circle
                {
-                    
+                    font-size:1.8em;
                    color:white;
+                   transition-duration:700ms;
                }
-               &:hover > .fa-check-circle
-               {
-                    transform:rotate(180deg);
+             
+    }
 
-                   
-               }
+
+    /* GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
+    .item:hover > .check_validate
+    {
+         padding-right:8em;
+    }
+
+
+    .item:hover > .check_validate > .fa-check-circle
+    {
+         transform:rotate(360deg);
+
     }
 
 
