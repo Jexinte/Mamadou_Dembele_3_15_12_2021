@@ -128,7 +128,7 @@ a:visited
         
      .check_validate
      {
-            visibility:hidden;
+        
             position: absolute;
             right:0;
             background-color:$tertiary_color;
@@ -136,12 +136,29 @@ a:visited
             border-top-right-radius: 20px;
             border-bottom-right-radius: 16px;
             top:0;
+            transition-property: padding-right,transform;
+            transition-duration:700ms;
+            transition-timing-function:ease;
+
+               &:hover
+               {
+                    padding-right:8em;
+               }
 
                & .fa-check-circle
                {
-                    color:white;
+                    
+                   color:white;
+               }
+               &:hover > .fa-check-circle
+               {
+                    transform:rotate(180deg);
+
+                   
                }
     }
+
+
     /* STARTER */
 
     .starter{
