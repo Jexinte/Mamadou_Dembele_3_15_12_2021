@@ -93,7 +93,6 @@ a:visited {
     font-weight: 100;
   }
   .check_validate {
-    visibility: hidden;
     position: absolute;
     right: 0;
     background-color: #99E2D0;
@@ -101,14 +100,16 @@ a:visited {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 16px;
     top: 0;
-    -webkit-transition-property: padding-right,-webkit-transform;
-    transition-property: padding-right,-webkit-transform;
-    transition-property: padding-right,transform;
-    transition-property: padding-right,transform,-webkit-transform;
+    -webkit-transition-property: width,-webkit-transform;
+    transition-property: width,-webkit-transform;
+    transition-property: width,transform;
+    transition-property: width,transform,-webkit-transform;
     -webkit-transition-duration: 700ms;
             transition-duration: 700ms;
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
+    width: 5%;
+    z-index: 9999;
   }
   .check_validate .fa-check-circle {
     font-size: 1.8em;
@@ -139,8 +140,9 @@ a:visited {
   }
   /* GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
   .item:hover > .check_validate {
-    visibility: visible;
-    padding-right: 3em;
+    width: 15%;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
   }
   .item:hover > .check_validate > .fa-check-circle {
     -webkit-animation: rotation 700ms ease-out;
