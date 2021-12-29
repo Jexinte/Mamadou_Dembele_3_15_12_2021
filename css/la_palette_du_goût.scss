@@ -195,6 +195,18 @@ a:visited
 
     }
 
+    .item__price
+    {
+        // Temporary rules
+        transition: padding-right 700ms ease-out;
+    }
+
+    .item:hover > .item__price
+    {
+        // Temporary rules
+        padding-right: 6em;        
+    }
+
     /* END GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
 
 

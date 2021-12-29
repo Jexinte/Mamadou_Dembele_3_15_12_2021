@@ -152,6 +152,13 @@ a:visited {
     -webkit-animation: rotation 700ms ease-out;
             animation: rotation 700ms ease-out;
   }
+  .item__price {
+    -webkit-transition: padding-right 700ms ease-out;
+    transition: padding-right 700ms ease-out;
+  }
+  .item:hover > .item__price {
+    padding-right: 6em;
+  }
   /* END GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
   /* STARTER */
   .starter {
