@@ -96,7 +96,7 @@ a:visited
         display:flex;
         flex-direction: column;
         position: relative;
-        margin-bottom: 4em;
+        padding-bottom:3.5em;
         
             & header
             {
@@ -193,6 +193,18 @@ a:visited
 
          animation: rotation 700ms ease-out;
 
+    }
+
+    .item__price
+    {
+        // Temporary rules
+        transition: padding-right 700ms ease-out;
+    }
+
+    .item:hover > .item__price
+    {
+        // Temporary rules
+        padding-right: 6em;        
     }
 
     /* END GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
@@ -344,12 +356,15 @@ a:visited
                                 text-align: center;
                                 cursor: $simulate_link_presence;
                                 box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
+                                width: 10em;
+                                margin:0 auto;
         
         
                                     & a
                                     {
                                         color:white;
                                     }
+
                                     
                                  
                             }
