@@ -132,20 +132,25 @@ a:visited
             position: absolute;
             right:0;
             background-color:$tertiary_color;
-            padding:1.73em;
+            height:100%;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 16px;
             top:0;
             transition-property: width,transform;
             transition-duration:700ms;
             transition-timing-function:ease-out;
-            width:5%;
-            z-index:9999;
+            width:0%;
+            /* To overlap the price div perhaps it's temporary */
+            z-index: 1;
+            
                & .fa-check-circle
                {
-                    font-size:1.8em;
-                   color:white;
-                   transition-duration:700ms;
+                    font-size:2.5em;
+                    color:white;
+                    transition-duration:700ms;
+                    position:relative;
+                    top:.5em;
+                    left:.5em;
                   
                }
              
@@ -168,13 +173,16 @@ a:visited
             }
     }
 
-
-    /* GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
+   
+    .item{
+        overflow:hidden;
+    }
+    
     .item:hover > .check_validate
     {
         
-         width:15%;
-         transition-duration: 2s;
+         width:6em;
+         
 
          
     }
@@ -186,6 +194,8 @@ a:visited
          animation: rotation 700ms ease-out;
 
     }
+
+    /* END GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
 
 
     /* STARTER */
