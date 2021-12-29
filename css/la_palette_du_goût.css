@@ -93,18 +93,66 @@ a:visited {
     font-weight: 100;
   }
   .check_validate {
-    visibility: hidden;
     position: absolute;
     right: 0;
     background-color: #99E2D0;
-    padding: 2.08em;
+    height: 100%;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 16px;
     top: 0;
+    -webkit-transition-property: width,-webkit-transform;
+    transition-property: width,-webkit-transform;
+    transition-property: width,transform;
+    transition-property: width,transform,-webkit-transform;
+    -webkit-transition-duration: 700ms;
+            transition-duration: 700ms;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    width: 0%;
+    /* To overlap the price div perhaps it's temporary */
+    z-index: 1;
   }
   .check_validate .fa-check-circle {
+    font-size: 2.5em;
     color: white;
+    -webkit-transition-duration: 700ms;
+            transition-duration: 700ms;
+    position: relative;
+    top: .5em;
+    left: .5em;
   }
+  /* GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+    to {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+  }
+  @keyframes rotation {
+    from {
+      -webkit-transform: rotate(-360deg);
+              transform: rotate(-360deg);
+    }
+    to {
+      -webkit-transform: rotate(0);
+              transform: rotate(0);
+    }
+  }
+  .item {
+    overflow: hidden;
+  }
+  .item:hover > .check_validate {
+    width: 6em;
+  }
+  .item:hover > .check_validate > .fa-check-circle {
+    -webkit-animation: rotation 700ms ease-out;
+            animation: rotation 700ms ease-out;
+  }
+  /* END GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
   /* STARTER */
   .starter {
     font-family: "Roboto", sans-serif;
