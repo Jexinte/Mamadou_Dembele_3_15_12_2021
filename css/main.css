@@ -256,6 +256,12 @@
     right: 19px;
     bottom: 27px;
   }
+  .item-2 .heart_animation .fa-heart {
+    background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent !important;
+  }
   .item-2:visited {
     color: black;
   }
