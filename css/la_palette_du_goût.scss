@@ -19,7 +19,8 @@ $simulate_link_presence:pointer;
 
 
 
-*{
+*
+{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -27,8 +28,12 @@ $simulate_link_presence:pointer;
 }
 
 
-a{
-    color:#353535;}
+a
+{
+    color:#353535;
+}
+
+
 a:visited
 {
    color:#353535;
@@ -84,6 +89,24 @@ a:visited
     
     /* END OF CONTAINER */
 
+
+
+    /* FOOD_MENU ANIMATION */
+
+    @keyframes FadeInFadeOut 
+
+    {
+
+     from{
+         opacity:0;
+     }
+
+     to{
+         opacity:1;
+     }
+    }
+    
+
     /* FOOD_MENU */
     .food_menu
     {
@@ -124,8 +147,10 @@ a:visited
                     
             }
 
+           
         }
-        
+
+
         
      .check_validate
      {
@@ -215,6 +240,7 @@ a:visited
 
     .starter{
         font-family: $FRoboto;
+        animation : FadeInFadeOut 1.5s ease-in-out;
 
             & .starter--title{
                 font-family:$FRoboto;
@@ -227,6 +253,7 @@ a:visited
                 border-width: 0.21em;
                 padding-bottom: .3em;
                 width: 2.6em;
+
             }
             & .item{
                 display:flex;
@@ -260,6 +287,7 @@ a:visited
                             .main_course
                             {
                                 font-family:$FRoboto;
+                                animation : FadeInFadeOut 2.5s ease-in-out;
                         
                                     & .main_course--title
                                     {
@@ -305,6 +333,7 @@ a:visited
                         
                                 font-family:$FRoboto;
                                 margin-bottom: 2em;
+                                animation : FadeInFadeOut 3.5s ease-in-out;
                                 & .desserts--title
                                 {
                                     font-weight: 500;
@@ -329,6 +358,7 @@ a:visited
                                     margin-bottom:$item_margin_bottom;
                                     position:relative;
                                     font-size: .8em;
+                                    
                         
                                         & .item--description h2
                                             {

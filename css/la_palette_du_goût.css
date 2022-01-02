@@ -54,6 +54,23 @@ a:visited {
     width: 100%;
   }
   /* END OF CONTAINER */
+  /* FOOD_MENU ANIMATION */
+  @-webkit-keyframes FadeInFadeOut {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes FadeInFadeOut {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
   /* FOOD_MENU */
   .food_menu {
     background-color: #F6F6F6;
@@ -164,6 +181,8 @@ a:visited {
   /* STARTER */
   .starter {
     font-family: "Roboto", sans-serif;
+    -webkit-animation: FadeInFadeOut 1.5s ease-in-out;
+            animation: FadeInFadeOut 1.5s ease-in-out;
   }
   .starter .starter--title {
     font-family: "Roboto", sans-serif;
@@ -202,6 +221,8 @@ a:visited {
   }
   .main_course {
     font-family: "Roboto", sans-serif;
+    -webkit-animation: FadeInFadeOut 2.5s ease-in-out;
+            animation: FadeInFadeOut 2.5s ease-in-out;
   }
   .main_course .main_course--title {
     font-weight: 500;
@@ -241,6 +262,8 @@ a:visited {
   .desserts {
     font-family: "Roboto", sans-serif;
     margin-bottom: 2em;
+    -webkit-animation: FadeInFadeOut 3.5s ease-in-out;
+            animation: FadeInFadeOut 3.5s ease-in-out;
   }
   .desserts .desserts--title {
     font-weight: 500;
