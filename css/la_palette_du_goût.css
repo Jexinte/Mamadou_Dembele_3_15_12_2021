@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Shrikhand Regular 400*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shrikhand&display=swap");
 /* Roboto */
@@ -366,4 +367,48 @@ a:visited {
 }
 
 /* END OF MEDIA QUERIES */
+@media screen and (max-width: 414px) {
+  .food_menu .item {
+    font-size: .62em;
+  }
+  .food_menu header .far {
+    position: absolute;
+    right: 0.7em;
+  }
+  /************************* TRUNCATE EFFECT *************************/
+  /* STARTER */
+  .starter > .item:hover:last-child > .item--description > p {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  /* MAIN COURSE */
+  .main_course > .item:hover:nth-child(2) > .item--description > p {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .main_course > .item:hover:nth-child(3) > .item--description > p {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  /* DESSERTS */
+  .desserts > .item:hover:nth-child(3) > .item--description > p {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .desserts > .item:hover:nth-child(4) > .item--description > p {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  /* Les modifications nécessaires seront faites dans la soirée */
+}
 /*# sourceMappingURL=la_palette_du_goût.css.map */
