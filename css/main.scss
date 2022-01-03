@@ -328,6 +328,13 @@ $simulate_link_presence:pointer;
                 position:absolute;
                 right:19px;
                 bottom:27px;
+&  .fa-heart {
+   background:linear-gradient(to bottom right,$secondary_color,$primary_color);
+   
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:transparent !important;
+}
+
 
             }
 
