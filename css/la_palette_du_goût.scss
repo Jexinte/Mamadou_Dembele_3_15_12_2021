@@ -19,7 +19,8 @@ $simulate_link_presence:pointer;
 
 
 
-*{
+*
+{
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -27,12 +28,17 @@ $simulate_link_presence:pointer;
 }
 
 
-a{
-    color:#353535;}
+a
+{
+    color:#353535;
+}
+
+
 a:visited
 {
    color:#353535;
 }
+
 @media screen and (min-width: 320px) and (max-width:767px)
 {
     
@@ -83,6 +89,24 @@ a:visited
     
     /* END OF CONTAINER */
 
+
+
+    /* FOOD_MENU ANIMATION */
+
+    @keyframes FadeInFadeOut 
+
+    {
+
+     from{
+         opacity:0;
+     }
+
+     to{
+         opacity:1;
+     }
+    }
+    
+
     /* FOOD_MENU */
     .food_menu
     {
@@ -96,7 +120,7 @@ a:visited
         display:flex;
         flex-direction: column;
         position: relative;
-        margin-bottom: 4em;
+        padding-bottom:3.5em;
         
             & header
             {
@@ -123,8 +147,10 @@ a:visited
                     
             }
 
+           
         }
-        
+
+
         
      .check_validate
      {
@@ -132,20 +158,25 @@ a:visited
             position: absolute;
             right:0;
             background-color:$tertiary_color;
-            padding:1.73em;
+            height:100%;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 16px;
             top:0;
             transition-property: width,transform;
             transition-duration:700ms;
             transition-timing-function:ease-out;
-            width:5%;
-            z-index:9999;
+            width:0%;
+            /* To overlap the price div perhaps it's temporary */
+            z-index: 1;
+            
                & .fa-check-circle
                {
-                    font-size:1.8em;
-                   color:white;
-                   transition-duration:700ms;
+                    font-size:2.5em;
+                    color:white;
+                    transition-duration:700ms;
+                    position:relative;
+                    top:.5em;
+                    left:.5em;
                   
                }
              
@@ -168,13 +199,16 @@ a:visited
             }
     }
 
-
-    /* GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
+   
+    .item{
+        overflow:hidden;
+    }
+    
     .item:hover > .check_validate
     {
         
-         width:15%;
-         transition-duration: 2s;
+         width:6em;
+         
 
          
     }
@@ -187,11 +221,26 @@ a:visited
 
     }
 
+    .item__price
+    {
+        // Temporary rules
+        transition: padding-right 700ms ease-out;
+    }
+
+    .item:hover > .item__price
+    {
+        // Temporary rules
+        padding-right: 6em;        
+    }
+
+    /* END GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
+
 
     /* STARTER */
 
     .starter{
         font-family: $FRoboto;
+        animation : FadeInFadeOut 1.5s ease-in-out;
 
             & .starter--title{
                 font-family:$FRoboto;
@@ -204,6 +253,7 @@ a:visited
                 border-width: 0.21em;
                 padding-bottom: .3em;
                 width: 2.6em;
+
             }
             & .item{
                 display:flex;
@@ -237,6 +287,7 @@ a:visited
                             .main_course
                             {
                                 font-family:$FRoboto;
+                                animation : FadeInFadeOut 2.5s ease-in-out;
                         
                                     & .main_course--title
                                     {
@@ -282,6 +333,7 @@ a:visited
                         
                                 font-family:$FRoboto;
                                 margin-bottom: 2em;
+                                animation : FadeInFadeOut 3.5s ease-in-out;
                                 & .desserts--title
                                 {
                                     font-weight: 500;
@@ -306,6 +358,7 @@ a:visited
                                     margin-bottom:$item_margin_bottom;
                                     position:relative;
                                     font-size: .8em;
+                                    
                         
                                         & .item--description h2
                                             {
@@ -334,12 +387,15 @@ a:visited
                                 text-align: center;
                                 cursor: $simulate_link_presence;
                                 box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
+                                width: 10em;
+                                margin:0 auto;
         
         
                                     & a
                                     {
                                         color:white;
                                     }
+
                                     
                                  
                             }
@@ -432,3 +488,77 @@ a:visited
 
 
 
+@media screen and (max-width:414px) 
+
+{
+    
+ .food_menu .item
+{
+
+    font-size: .62em;
+
+}
+
+.food_menu header .far
+{
+    position: absolute;
+    right:0.7em;
+}
+
+/************************* TRUNCATE EFFECT *************************/
+
+
+/* STARTER */
+
+    .starter > .item:hover:last-child > .item--description > p
+    {
+          width: 100px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        
+    }
+
+/* MAIN COURSE */
+
+    .main_course > .item:hover:nth-child(2) > .item--description > p
+    {
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        
+    }
+    .main_course > .item:hover:nth-child(3) > .item--description > p
+    {
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+
+/* DESSERTS */
+
+
+    .desserts > .item:hover:nth-child(3) > .item--description > p
+    {
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        
+    }
+    .desserts > .item:hover:nth-child(4) > .item--description > p
+    {
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+    }
+
+/* Les modifications nécessaires seront faites dans la soirée */
+}

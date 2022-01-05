@@ -15,6 +15,8 @@ $white : white;
 $simulate_link_presence:pointer;
 
 
+
+
 *
 {
     margin: 0;
@@ -27,6 +29,84 @@ $simulate_link_presence:pointer;
 {
     color:black;
 }
+
+
+/* PRE-LOAD */
+
+#pre-load{
+    background:white;
+    z-index:9999;
+    height:100vh;
+    width:100%;
+    animation: dissapear 3s ease-in-out;
+    visibility:hidden;
+    position:absolute;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  
+
+ @keyframes dissapear {
+    
+    from{
+      visibility:visible;
+      height: 100vh;
+      //opacity:1;
+    }
+    to {
+      //opacity:0;
+      height:0;
+    }
+  }
+  
+  
+  #pre-load img{
+   
+    position:relative;
+    margin:0 auto;
+    top:15em;
+    left:0em;
+    visibility:hidden;
+    animation : loading 1.6s ease-in-out; 
+    object-fit:cover;
+    width:10em;
+    height:10em;
+    border-radius:50%;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),
+    5px 8px 8px rgba(0,0,0,0.5),;
+  }
+  
+
+  @keyframes loading {
+    from {
+      visibility:visible;
+      transform:rotate(1turn);
+      
+    }
+    
+    to {
+     
+      visibility:hidden;
+     
+    }
+  }
+  
+  
+  
+  
+/* END OF PRE-LOAD */
+
 
 /* MOBILE */
 @media screen and (min-width:320px) and (max-width:767px)
@@ -328,6 +408,13 @@ $simulate_link_presence:pointer;
                 position:absolute;
                 right:19px;
                 bottom:27px;
+&  .fa-heart {
+   background:linear-gradient(to bottom right,$secondary_color,$primary_color);
+   
+   -webkit-background-clip: text;
+   -webkit-text-fill-color:transparent !important;
+}
+
 
             }
 
@@ -422,6 +509,7 @@ $simulate_link_presence:pointer;
         position: relative;
         right:39px;
         font-size: 1em;
+        margin-bottom: 2em;
         cursor: $simulate_link_presence;
 
             & li {
