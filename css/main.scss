@@ -409,32 +409,63 @@ $simulate_link_presence:pointer;
                 right:19px;
                 bottom:27px;
 &  .fa-heart {
-   background:linear-gradient(to bottom right,$secondary_color,$primary_color);
-   
+   background:linear-gradient(to top,$secondary_color,$primary_color);
    -webkit-background-clip: text;
    -webkit-text-fill-color:transparent !important;
-}
-
-
-            }
-
-        
-
-            &:visited
-            {
-            color:black;
-            }
-
-            & img
-            {
-            width: 100%;
-            object-fit: cover;
-            height: 152px;
-            border-top-right-radius: 20px;
-            border-top-left-radius: 20px;
-            }
     
+    &::after
+        {
+        content:'\f004';   
+        position:relative;
+        right:1.7em;
+        font-size:.4em;
+        bottom:25px;
+        transition: transform 500ms ease-in;
+        display:inline-block;
+        font-weight:bold;
+        cursor:pointer;
+        top:-6px;
+        visibility:hidden;
+    }
+
+    
+   
 }
+
+
+}
+
+
+
+
+
+
+
+
+&:visited
+{
+    color:black;
+}
+
+& img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 152px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+}
+
+.heart_animation:hover > .fa-heart::after{
+    visibility:visible;
+    transform:scale(2.3);
+  }
+
+
+
+  
 
     /* END OF SECTION -4 */
 
