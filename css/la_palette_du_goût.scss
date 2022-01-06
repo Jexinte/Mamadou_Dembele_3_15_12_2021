@@ -171,12 +171,16 @@ a:visited
            
         }
 
+
         .heart_animation:active > .fa-heart
         {
             background:linear-gradient(to top,$secondary_color,$primary_color);
             -webkit-background-clip: text;
             -webkit-text-fill-color:transparent;
         }
+
+        
+
         .heart_animation:active > .fa-heart::after
         {
            
