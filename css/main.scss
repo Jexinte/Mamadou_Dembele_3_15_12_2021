@@ -458,7 +458,7 @@ $simulate_link_presence:pointer;
 
 }
 
-.heart_animation:hover > .fa-heart::after{
+.heart_animation:active > .fa-heart::after{
     visibility:visible;
     transform:scale(2.3);
   }
@@ -507,12 +507,17 @@ $simulate_link_presence:pointer;
         position: relative;
         right:2.5em;
         cursor: $simulate_link_presence;
+
                 & .fas
                 {
                     position: relative;
                     top:2px;
                     font-size: 0.9em;
                     
+                }
+
+                & #proposal{
+                    color:$white;
                 }
 
     }
@@ -534,6 +539,12 @@ $simulate_link_presence:pointer;
                    
                     
                 }
+
+                & #partnership{
+                    color:$white;
+                    position: relative;
+                    right:.3em;
+                }
     }
 
     .list{
@@ -545,6 +556,10 @@ $simulate_link_presence:pointer;
 
             & li {
                 line-height: 30px;
+            }
+
+            & .footer_link{
+                color:$white;
             }
     }
 
