@@ -192,16 +192,14 @@
     cursor: pointer;
     -webkit-box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
             box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
-    /*
-            &:hover{
-                opacity: 0.9;
-                box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
-                transition:900ms;
-            }
-            */
   }
   .button a {
     color: white;
+  }
+  .button:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   }
   /* END OF SECTION -2 */
   /* SECTION -3 */
