@@ -51,6 +51,10 @@ a:visited {
   }
   .container .banner img {
     width: 100%;
+    /* Temporary size */
+    height: 17em;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   /* END OF CONTAINER */
   /* FOOD_MENU ANIMATION */

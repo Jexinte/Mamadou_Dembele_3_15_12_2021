@@ -83,6 +83,9 @@ a:visited
            & img 
            {
                width: 100%;
+               /* Temporary size */
+               height:17em;
+               object-fit: cover;
             }
         }
     }
