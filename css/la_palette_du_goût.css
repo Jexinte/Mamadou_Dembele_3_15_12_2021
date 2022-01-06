@@ -104,10 +104,6 @@ a:visited {
     font-weight: 500;
   }
   .food_menu header .far {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to top, #FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-size: 1.8em;
     position: absolute;
     top: 0.20em;
@@ -131,7 +127,13 @@ a:visited {
     top: -6px;
     visibility: hidden;
   }
-  .heart_animation:hover > .fa-heart::after {
+  .heart_animation:active > .fa-heart {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .heart_animation:active > .fa-heart::after {
     visibility: visible;
     -webkit-transform: scale(2.3);
             transform: scale(2.3);
