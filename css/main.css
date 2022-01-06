@@ -192,16 +192,14 @@
     cursor: pointer;
     -webkit-box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
             box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
-    /*
-            &:hover{
-                opacity: 0.9;
-                box-shadow: -1px 1px 7px rgba(0,0,0,0.5);
-                transition:900ms;
-            }
-            */
   }
   .button a {
     color: white;
+  }
+  .button:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
   }
   /* END OF SECTION -2 */
   /* SECTION -3 */
@@ -338,12 +336,6 @@
     right: 19px;
     bottom: 27px;
   }
-  .item-2 .heart_animation .fa-heart {
-    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
-    background: linear-gradient(to top, #FF79DA, #9356DC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent !important;
-  }
   .item-2 .heart_animation .fa-heart::after {
     content: '\f004';
     position: relative;
@@ -360,6 +352,17 @@
     top: -6px;
     visibility: hidden;
   }
+  .item-2 .heart_animation:active > .fa-heart {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .item-2 .heart_animation:active > .fa-heart::after {
+    visibility: visible;
+    -webkit-transform: scale(2.3);
+            transform: scale(2.3);
+  }
   .item-2:visited {
     color: black;
   }
@@ -370,11 +373,6 @@
     height: 152px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-  }
-  .heart_animation:hover > .fa-heart::after {
-    visibility: visible;
-    -webkit-transform: scale(2.3);
-            transform: scale(2.3);
   }
   /* END OF SECTION -4 */
   /* FOOTER */
@@ -419,6 +417,9 @@
     top: 2px;
     font-size: 0.9em;
   }
+  .icon_description #proposal {
+    color: white;
+  }
   .icon_description--2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -434,6 +435,11 @@
     top: 2px;
     font-size: 0.9em;
   }
+  .icon_description--2 #partnership {
+    color: white;
+    position: relative;
+    right: .3em;
+  }
   .list {
     position: relative;
     right: 39px;
@@ -443,6 +449,9 @@
   }
   .list li {
     line-height: 30px;
+  }
+  .list .footer_link {
+    color: white;
   }
   /* END OF FOOTER */
 }

@@ -109,6 +109,34 @@ a:visited {
     top: 0.20em;
     right: 1.2em;
     font-weight: 100;
+    cursor: pointer;
+  }
+  .food_menu header .far::after {
+    content: '\f004';
+    position: relative;
+    right: 1.7em;
+    font-size: .4em;
+    bottom: 25px;
+    -webkit-transition: -webkit-transform 500ms ease-in;
+    transition: -webkit-transform 500ms ease-in;
+    transition: transform 500ms ease-in;
+    transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
+    display: inline-block;
+    font-weight: bold;
+    cursor: simulate_link_presence;
+    top: -6px;
+    visibility: hidden;
+  }
+  .heart_animation:active > .fa-heart {
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .heart_animation:active > .fa-heart::after {
+    visibility: visible;
+    -webkit-transform: scale(2.3);
+            transform: scale(2.3);
   }
   .check_validate {
     position: absolute;
@@ -318,6 +346,11 @@ a:visited {
   .button a {
     color: white;
   }
+  .button:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
   /* END OF MENU */
   /* FOOTER */
   footer {
@@ -361,6 +394,9 @@ a:visited {
     top: 2px;
     font-size: 0.9em;
   }
+  .icon_description #proposal {
+    color: white;
+  }
   .icon_description--2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -376,6 +412,11 @@ a:visited {
     top: 2px;
     font-size: 0.9em;
   }
+  .icon_description--2 #partnership {
+    color: white;
+    position: relative;
+    right: .3em;
+  }
   .list {
     position: relative;
     right: 39px;
@@ -385,6 +426,9 @@ a:visited {
   }
   .list li {
     line-height: 30px;
+  }
+  .list .footer_link {
+    color: white;
   }
   /* END OF FOOTER */
 }
