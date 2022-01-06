@@ -136,18 +136,48 @@ a:visited
                     }
 
                     & .far{
+                        background:linear-gradient(to top,$secondary_color,$primary_color);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color:transparent;
                         font-size: 1.8em;
                         position: absolute;
                         top:0.20em;
                         right:1.2em;
                         font-weight: 100;
-                    
+                        cursor:$simulate_link_presence;
+
+                        &::after
+                        {
+                            content:'\f004';   
+                            position:relative;
+                            right:1.7em;
+                            font-size:.4em;
+                            bottom:25px;
+                            transition: transform 500ms ease-in;
+                            display:inline-block;
+                            font-weight:bold;
+                            cursor:simulate_link_presence;
+                            top:-6px;
+                            visibility:hidden;
+                        }
+                        
                     }
+
+
+                   
+
 
                     
             }
 
            
+        }
+
+        
+        .heart_animation:hover > .fa-heart::after
+        {
+          visibility:visible;
+          transform:scale(2.3);
         }
 
 
@@ -439,12 +469,17 @@ a:visited
         position: relative;
         right:2.5em;
         cursor: $simulate_link_presence;
+
                 & .fas
                 {
                     position: relative;
                     top:2px;
                     font-size: 0.9em;
                     
+                }
+
+                & #proposal{
+                    color:$white;
                 }
 
     }
@@ -466,6 +501,12 @@ a:visited
                    
                     
                 }
+
+                & #partnership{
+                    color:$white;
+                    position: relative;
+                    right:.3em;
+                }
     }
 
     .list{
@@ -474,9 +515,14 @@ a:visited
         font-size: 1em;
         cursor: $simulate_link_presence;
         margin-bottom: 2em;
+    
             & li
             {
                 line-height: 30px;
+            }
+
+            & .footer_link{
+                color:$white;
             }
     }
 
