@@ -371,7 +371,7 @@
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
   }
-  .heart_animation:hover > .fa-heart::after {
+  .heart_animation:active > .fa-heart::after {
     visibility: visible;
     -webkit-transform: scale(2.3);
             transform: scale(2.3);
@@ -419,6 +419,9 @@
     top: 2px;
     font-size: 0.9em;
   }
+  .icon_description #proposal {
+    color: white;
+  }
   .icon_description--2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -434,6 +437,11 @@
     top: 2px;
     font-size: 0.9em;
   }
+  .icon_description--2 #partnership {
+    color: white;
+    position: relative;
+    right: .3em;
+  }
   .list {
     position: relative;
     right: 39px;
@@ -443,6 +451,9 @@
   }
   .list li {
     line-height: 30px;
+  }
+  .list .footer_link {
+    color: white;
   }
   /* END OF FOOTER */
 }
