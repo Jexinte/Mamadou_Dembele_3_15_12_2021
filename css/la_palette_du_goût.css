@@ -346,6 +346,11 @@ a:visited {
   .button a {
     color: white;
   }
+  .button:hover {
+    opacity: 0.9;
+    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  }
   /* END OF MENU */
   /* FOOTER */
   footer {
