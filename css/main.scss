@@ -409,9 +409,7 @@ $simulate_link_presence:pointer;
                 right:19px;
                 bottom:27px;
 &  .fa-heart {
-   background:linear-gradient(to top,$secondary_color,$primary_color);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color:transparent;
+  
     
     &::after
         {
@@ -438,7 +436,18 @@ $simulate_link_presence:pointer;
 
 
 
-
+.heart_animation:active > .fa-heart
+{
+    background:linear-gradient(to top,$secondary_color,$primary_color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.heart_animation:active > .fa-heart::after
+{
+   
+  visibility:visible;
+  transform:scale(2.3);
+}
 
 
 
@@ -457,12 +466,6 @@ $simulate_link_presence:pointer;
 }
 
 }
-
-.heart_animation:active > .fa-heart::after{
-    visibility:visible;
-    transform:scale(2.3);
-  }
-
 
 
   
