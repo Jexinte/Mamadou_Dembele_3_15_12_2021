@@ -157,6 +157,9 @@ a:visited
                             cursor:simulate_link_presence;
                             top:-6px;
                             visibility:hidden;
+                            background:linear-gradient(to top,$secondary_color,$primary_color);
+                            -webkit-background-clip: text;
+                            background-clip: text;
                         }
                         
                     }

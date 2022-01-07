@@ -98,7 +98,7 @@
 
 /* END OF PRE-LOAD */
 /* MOBILE */
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 992px) {
   /* HEADER */
   #logo {
     display: -webkit-box;
@@ -351,17 +351,22 @@
     cursor: pointer;
     top: -6px;
     visibility: hidden;
+    background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(to top, #FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    background-clip: text;
   }
   .item-2 .heart_animation:active > .fa-heart {
     background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
     background: linear-gradient(to top, #FF79DA, #9356DC);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .item-2 .heart_animation:active > .fa-heart::after {
     visibility: visible;
-    -webkit-transform: scale(2.3);
-            transform: scale(2.3);
+    -webkit-transform: scale(2.4);
+            transform: scale(2.4);
   }
   .item-2:visited {
     color: black;
