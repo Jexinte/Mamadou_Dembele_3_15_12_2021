@@ -50,7 +50,7 @@ a:visited
         display:flex;
         justify-content: center;
         font-family: $FShrikhand;
-        font-weight:thin;
+        
         padding-block: 0.6em;
         
             & .fas 
@@ -154,11 +154,12 @@ a:visited
                             transition: transform 500ms ease-in;
                             display:inline-block;
                             font-weight:bold;
-                            cursor:simulate_link_presence;
+                            cursor:$simulate_link_presence;
                             top:-6px;
                             visibility:hidden;
                             background:linear-gradient(to top,$secondary_color,$primary_color);
                             -webkit-background-clip: text;
+                            background-clip: text;
                             
                         }
                         
@@ -179,6 +180,7 @@ a:visited
         {
             background:linear-gradient(to top,$secondary_color,$primary_color);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color:transparent;
         }
 

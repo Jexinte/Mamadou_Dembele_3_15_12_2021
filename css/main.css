@@ -141,9 +141,10 @@
   .section-2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+    /*-ms-grid-columns: (1fr)[2];*/
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "a a " "b b ";
+        grid-template-areas: "a a "
+ "b b ";
     justify-items: center;
     font-family: "Roboto", sans-serif;
     padding: 2rem;
@@ -160,7 +161,7 @@
     position: relative;
     left: 39px;
   }
-  .description h1 {
+  .description h2 {
     font-weight: bold;
     margin-bottom: 15px;
     position: relative;
@@ -222,7 +223,7 @@
     padding-left: 23px;
     padding-right: 15px;
   }
-  .functioning h1 {
+  .functioning .h2 {
     font-size: 1.3em;
     margin-bottom: 1.1em;
     margin-right: 48px;
@@ -291,7 +292,7 @@
     padding-right: 16px;
     padding-left: 14px;
   }
-  .food_cards h1 {
+  .food_cards .h2 {
     font-size: 1.3em;
     position: relative;
     left: 4px;
@@ -463,7 +464,7 @@
 
 /* ADJUSTING SIZE AND POSITION OF ELEMENTS OF SECTION -2 ON MOBILE VERSION */
 @media screen and (min-width: 0px) and (max-width: 368px) {
-  .description h1 {
+  .description h2 {
     position: relative;
     font-size: 1.1em;
     left: 35px;
