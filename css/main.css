@@ -354,14 +354,14 @@ END OF PRE-LOAD */
     -webkit-background-clip: text;
     background-clip: text;
   }
-  .item-2 .heart_animation:active > .fa-heart {
+  .item-2 .heart_animation:hover > .fa-heart {
     background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
     background: linear-gradient(to top, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  .item-2 .heart_animation:active > .fa-heart::after {
+  .item-2 .heart_animation:hover > .fa-heart::after {
     visibility: visible;
     -webkit-transform: scale(2.4);
             transform: scale(2.4);
@@ -381,15 +381,17 @@ END OF PRE-LOAD */
   footer {
     background-color: #353535;
     color: white;
+    padding-bottom: 2px;
   }
   .more_information {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: "Roboto", sans-serif;
     gap: 10px;
     margin-left: 4em;
@@ -403,6 +405,8 @@ END OF PRE-LOAD */
     font-weight: 500;
     font-size: 1.2em;
     cursor: pointer;
+    text-align: center;
+    width: 100%;
   }
   .icon_description {
     display: -webkit-box;
@@ -443,8 +447,12 @@ END OF PRE-LOAD */
     right: .3em;
   }
   .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: relative;
     right: 39px;
+    bottom: 4px;
     font-size: 1em;
     margin-bottom: 2em;
     cursor: pointer;
@@ -454,6 +462,7 @@ END OF PRE-LOAD */
   }
   .list .footer_link {
     color: white;
+    margin-right: 1em;
   }
   /* END OF FOOTER */
 }

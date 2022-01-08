@@ -440,7 +440,7 @@ END OF PRE-LOAD */
 
 
 
-    .heart_animation:active > .fa-heart
+    .heart_animation:hover > .fa-heart
     {
     background:linear-gradient(to top,$secondary_color,$primary_color);
     -webkit-background-clip: text;
@@ -448,7 +448,7 @@ END OF PRE-LOAD */
     -webkit-text-fill-color:transparent;
 
     }
-    .heart_animation:active > .fa-heart::after
+    .heart_animation:hover > .fa-heart::after
     {
 
     visibility:visible;
@@ -484,12 +484,14 @@ END OF PRE-LOAD */
     {
     background-color: $bg-footer;
     color:$white;
+    padding-bottom: 2px;
     }
 
     .more_information
     {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
     font-family: $FRoboto;
     gap:10px;
     margin-left:4em;
@@ -504,6 +506,8 @@ END OF PRE-LOAD */
     font-weight:500;
     font-size: 1.2em;
     cursor: $simulate_link_presence;
+    text-align: center;
+    width: 100%;
     }
     }
 
@@ -556,8 +560,10 @@ END OF PRE-LOAD */
     }
 
     .list{
+    display:flex;
     position: relative;
     right:39px;
+    bottom:4px;
     font-size: 1em;
     margin-bottom: 2em;
     cursor: $simulate_link_presence;
@@ -568,6 +574,7 @@ END OF PRE-LOAD */
 
     & .footer_link{
     color:$white;
+    margin-right: 1em;
     }
     }
     /* END OF FOOTER */
