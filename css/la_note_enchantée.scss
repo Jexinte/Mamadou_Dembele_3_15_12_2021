@@ -182,6 +182,7 @@ background-clip: text;
         {
             background:linear-gradient(to top,$secondary_color,$primary_color);
             -webkit-background-clip: text;
+                    background-clip: text;
             -webkit-text-fill-color:transparent;
         }
 
