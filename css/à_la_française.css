@@ -156,7 +156,6 @@ a:visited {
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
     width: 0%;
-    /* To overlap the price div perhaps it's temporary */
     z-index: 1;
   }
   .check_validate .fa-check-circle {
@@ -389,7 +388,6 @@ a:visited {
   .button {
     padding: 0.9em 1.5em;
     border-radius: 30px;
-    /* Temporary */
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     margin-top: 10px;
@@ -611,7 +609,6 @@ a:visited {
     background: linear-gradient(to top, #FF79DA, #9356DC);
     -webkit-background-clip: text;
     background-clip: text;
-    background-clip: text;
   }
   .heart_animation:active > .fa-heart {
     background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
@@ -642,7 +639,6 @@ a:visited {
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
     width: 0%;
-    /* To overlap the price div perhaps it's temporary */
     z-index: 1;
   }
   .check_validate .fa-check-circle {
@@ -818,7 +814,6 @@ a:visited {
   .button {
     padding: 0.9em 1.5em;
     border-radius: 30px;
-    /* Temporary */
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     margin-top: 10px;
@@ -929,22 +924,18 @@ a:visited {
     position: absolute;
     right: 0.1em;
   }
-  /************************* TRUNCATE EFFECT *************************/
-  /* STARTER */
   .starter > .item:active:nth-child(4) > .item--description > h2 {
     width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* MAIN COURSE */
   .main_course > .item:active:nth-child(4) > .item--description > h2 {
     width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* DESSERTS */
   .desserts > .item:active:nth-child(2) > .item--description > h2 {
     width: 100px;
     overflow: hidden;
