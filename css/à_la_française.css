@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Shrikhand Regular 400*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Shrikhand&display=swap");
 /* Roboto */
@@ -948,6 +947,5 @@ a:visited {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  /* Les modifications nécessaires seront faites dans la soirée */
 }
 /*# sourceMappingURL=à_la_française.css.map */

@@ -182,7 +182,6 @@ a:visited {
     grid-area: b;
     padding: 0.9em 1.5em;
     border-radius: 30px;
-    /* Temporary */
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     margin-top: 10px;
@@ -561,7 +560,6 @@ a:visited {
     grid-area: b;
     padding: 0.9em 1.5em;
     border-radius: 30px;
-    /* Temporary */
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     margin-top: 10px;

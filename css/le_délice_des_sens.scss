@@ -163,46 +163,46 @@ a:visited
     }
  
  
-         .heart_animation:hover > .fa-heart
-         {
-             background:linear-gradient(to top,$secondary_color,$primary_color);
-             -webkit-background-clip: text;
-                     background-clip: text;
-             -webkit-text-fill-color:transparent;
-         }
+    .heart_animation:hover > .fa-heart
+    {
+        background:linear-gradient(to top,$secondary_color,$primary_color);
+        -webkit-background-clip: text;
+                background-clip: text;
+        -webkit-text-fill-color:transparent;
+    }
+
+    .heart_animation:hover > .fa-heart::after
+    {
+    visibility:visible;
+    transform:scale(2.4);
+    }
  
-         .heart_animation:hover > .fa-heart::after
-         {
-            visibility:visible;
-            transform:scale(2.4);
-         }
- 
-      .check_validate
-      {
-        position: absolute;
-        right:0;
-        background-color:$tertiary_color;
-        height:100%;
-        border-top-right-radius: 20px;
-        border-bottom-right-radius: 16px;
-        top:0;
-        transition-property: width,transform;
-        transition-duration:700ms;
-        transition-timing-function:ease-out;
-        width:0%;
-        z-index: 1;
-        
-            & .fa-check-circle
-            {
-                font-size:2.5em;
-                color:white;
-                transition-duration:700ms;
-                position:relative;
-                top:.5em;
-                left:.5em;
-            }
-              
-      }
+    .check_validate
+    {
+    position: absolute;
+    right:0;
+    background-color:$tertiary_color;
+    height:100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 16px;
+    top:0;
+    transition-property: width,transform;
+    transition-duration:700ms;
+    transition-timing-function:ease-out;
+    width:0%;
+    z-index: 1;
+    
+        & .fa-check-circle
+        {
+            font-size:2.5em;
+            color:white;
+            transition-duration:700ms;
+            position:relative;
+            top:.5em;
+            left:.5em;
+        }
+            
+    }
  
        /* GENERAL RULES OF ANIMATION FOR ALL FOOD MENUS */
      @keyframes rotation 
@@ -947,7 +947,6 @@ a:visited
             { 
                 padding:0.9em 1.5em;
                 border-radius: 30px;
-                /* Temporary */
                 background-image:linear-gradient(to bottom right,$secondary_color,$primary_color);
                 margin-top:10px;
                 position: relative;

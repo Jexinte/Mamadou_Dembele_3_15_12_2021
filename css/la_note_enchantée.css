@@ -51,7 +51,6 @@ a:visited {
   }
   .container .banner img {
     width: 100%;
-    /* Temporary size */
     height: 41em;
     -o-object-fit: cover;
        object-fit: cover;
