@@ -155,7 +155,6 @@ a:visited {
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
     width: 0%;
-    /* To overlap the price div perhaps it's temporary */
     z-index: 1;
   }
   .check_validate .fa-check-circle {
@@ -254,6 +253,7 @@ a:visited {
     margin-bottom: 0.8em;
     position: relative;
     font-size: .8em;
+    cursor: pointer;
     width: 46%;
   }
   .starter .item .item--description h2 {
@@ -388,7 +388,6 @@ a:visited {
   .button {
     padding: 0.9em 1.5em;
     border-radius: 30px;
-    /* Temporary */
     background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
     background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
     margin-top: 10px;
@@ -641,7 +640,6 @@ a:visited {
     -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out;
     width: 0%;
-    /* To overlap the price div perhaps it's temporary */
     z-index: 1;
   }
   .check_validate .fa-check-circle {
@@ -722,6 +720,7 @@ a:visited {
     margin-bottom: 0.8em;
     position: relative;
     font-size: .8em;
+    cursor: pointer;
   }
   .starter .item .item--description h2 {
     margin-bottom: .2em;
@@ -928,7 +927,6 @@ a:visited {
     position: absolute;
     right: 0.1em;
   }
-  /************************* TRUNCATE EFFECT *************************/
   /* STARTER */
   .starter > .item:active:nth-child(3) > .item--description > h2 {
     width: 100px;
