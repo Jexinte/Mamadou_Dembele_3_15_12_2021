@@ -85,7 +85,7 @@ $simulate_link_presence:pointer;
             & img 
             {
                 width: 100%;
-                height:41em;
+                height:55em;
                 object-fit: cover;
              }
          }
@@ -121,6 +121,7 @@ $simulate_link_presence:pointer;
             flex-direction: column;
             position: relative;
             padding-bottom:3.5em;
+            margin-top:-2em;
          
              & header
              {
