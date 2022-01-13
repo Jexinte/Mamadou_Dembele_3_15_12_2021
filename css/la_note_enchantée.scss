@@ -1128,6 +1128,14 @@ $simulate_link_presence:pointer;
     }
 
 
+    .desserts > .item:active:nth-child(2) > .item--description > p
+    {
+        width: 150px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
     .desserts > .item:active:nth-child(2) > .item--description > h2
     {
         width: 100px;
@@ -1135,14 +1143,7 @@ $simulate_link_presence:pointer;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
-
-    .desserts > .item:active:nth-child(2) > .item--description > p
-    {
-        width: 100px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
+   
 }
 
 @media screen and (max-width: 400px)

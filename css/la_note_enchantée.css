@@ -949,13 +949,13 @@ a:visited {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .desserts > .item:active:nth-child(2) > .item--description > h2 {
-    width: 100px;
+  .desserts > .item:active:nth-child(2) > .item--description > p {
+    width: 150px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
-  .desserts > .item:active:nth-child(2) > .item--description > p {
+  .desserts > .item:active:nth-child(2) > .item--description > h2 {
     width: 100px;
     overflow: hidden;
     text-overflow: ellipsis;

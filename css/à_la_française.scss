@@ -1100,31 +1100,7 @@ a:visited
     }
 
 
-    .starter > .item:active:nth-child(4) > .item--description > h2
-    {
-          width: 100px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-    }
-
     .main_course > .item:active:nth-child(4) > .item--description > h2
-    {
-        width: 100px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    .desserts > .item:active:nth-child(2) > .item--description > h2
-    {
-        width: 100px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;        
-    }
-    
-    .desserts > .item:active:nth-child(4) > .item--description > p
     {
         width: 100px;
         overflow: hidden;
