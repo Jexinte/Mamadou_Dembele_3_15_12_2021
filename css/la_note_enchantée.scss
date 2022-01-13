@@ -1144,3 +1144,51 @@ $simulate_link_presence:pointer;
         white-space: nowrap;
     }
 }
+
+@media screen and (max-width: 400px)
+{
+     /* CONTAINER */
+ 
+     .container
+     {
+         width: 100%;
+         
+         & .banner 
+         {
+             width: 100%;
+             
+             & img 
+             {
+                 width: 100%;
+                 height:13em;
+                 object-fit: cover;
+              }
+          }
+      }
+      
+      /* END OF CONTAINER */    
+}
+
+@media screen and (min-width: 401px) and (max-width:991px)
+{
+     /* CONTAINER */
+ 
+     .container
+     {
+         width: 100%;
+         
+         & .banner 
+         {
+             width: 100%;
+             
+             & img 
+             {
+                 width: 100%;
+                 height:25em;
+                 object-fit: cover;
+              }
+          }
+      }
+      
+      /* END OF CONTAINER */    
+}
