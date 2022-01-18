@@ -36,9 +36,18 @@ $simulate_link_presence:pointer;
 
     a:visited
     {
-    color:#353535;
+        color:#353535;
     }
 
+    #back_to_homepage--2:visited
+    {
+        color:black;
+    }
+    
+    #back_to_homepage--2:visited
+    {
+        color:black;
+    }
 /* DESKTOP */
 @media screen and (min-width: 993px) 
 {
@@ -589,7 +598,7 @@ $simulate_link_presence:pointer;
 
 
 
-@media screen and (min-width: 320px) and (max-width:992px)
+@media screen and (min-width: 0px) and (max-width:992px)
 {
     
 
@@ -1097,6 +1106,14 @@ $simulate_link_presence:pointer;
 
 
 
+    .main_course > .item:active:nth-child(2) > .item--description > p
+    {
+        width: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+   
     
     .main_course > .item:active:nth-child(3) > .item--description > h2
     {
