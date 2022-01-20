@@ -944,5 +944,11 @@ a:visited {
     text-overflow: ellipsis;
     white-space: nowrap;
   }
+  .starter > .item:active:nth-child(3) > .item--description > p {
+    width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
 /*# sourceMappingURL=le_délice_des_sens.css.map */

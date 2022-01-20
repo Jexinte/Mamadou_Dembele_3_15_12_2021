@@ -141,7 +141,6 @@ a:visited {
   .section-2 {
     display: -ms-grid;
     display: grid;
-    
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas: "a a "
  "b b ";
@@ -175,7 +174,6 @@ a:visited {
     font-size: 1.1em;
   }
   .button {
-   
     -ms-grid-column-span: 2;
     grid-area: b;
     padding: 0.9em 1.5em;
