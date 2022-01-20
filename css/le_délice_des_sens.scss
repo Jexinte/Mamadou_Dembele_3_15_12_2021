@@ -66,9 +66,9 @@ a:visited
              & .fas 
              {
                  font-size:1.5em;
-                 position: relative;
-                 right:2.5em;
-                 top:0.3em;
+                 position:absolute;
+                 top:17px;
+                 left:22px;
              }
  
              & h1
@@ -608,9 +608,9 @@ a:visited
             & .fas 
             {
                 font-size:1.5em;
-                position: relative;
-                right:2.5em;
-                top:0.3em;
+                position:absolute;
+                top:0.7em;
+                left:22px;
             }
 
             & h1

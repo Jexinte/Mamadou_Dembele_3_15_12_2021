@@ -42,9 +42,9 @@ a:visited {
   }
   .back_to_homepage .fas {
     font-size: 1.5em;
-    position: relative;
-    right: 2.5em;
-    top: 0.3em;
+    position: absolute;
+    top: 17px;
+    left: 22px;
   }
   .back_to_homepage h1 {
     font-size: 1.5em;
@@ -525,9 +525,9 @@ a:visited {
   }
   .back_to_homepage .fas {
     font-size: 1.5em;
-    position: relative;
-    right: 2.5em;
-    top: 0.3em;
+    position: absolute;
+    top: 0.7em;
+    left: 22px;
   }
   .back_to_homepage h1 {
     font-size: 1.5em;
