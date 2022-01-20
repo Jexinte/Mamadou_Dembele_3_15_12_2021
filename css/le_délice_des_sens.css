@@ -43,7 +43,7 @@ a:visited {
   .back_to_homepage .fas {
     font-size: 1.5em;
     position: relative;
-    right: 1.5em;
+    right: 2.5em;
     top: 0.3em;
   }
   .back_to_homepage h1 {
@@ -407,6 +407,7 @@ a:visited {
             box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
     width: 10em;
     margin: 0 auto;
+    font-family: 'Roboto',sans-serif;
   }
   .button a {
     color: white;
@@ -525,7 +526,7 @@ a:visited {
   .back_to_homepage .fas {
     font-size: 1.5em;
     position: relative;
-    right: 1.5em;
+    right: 2.5em;
     top: 0.3em;
   }
   .back_to_homepage h1 {
@@ -835,6 +836,7 @@ a:visited {
             box-shadow: -1px 1px 7px rgba(0, 0, 0, 0.5);
     width: 10em;
     margin: 0 auto;
+    font-family: 'Roboto',sans-serif;
   }
   .button a {
     color: white;

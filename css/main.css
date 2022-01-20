@@ -141,17 +141,15 @@ a:visited {
   .section-2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "a a " "b b ";
+        grid-template-areas: "a a "
+ "b b ";
     justify-items: center;
     font-family: "Roboto", sans-serif;
     padding: 2rem;
     background-color: #F8F8F8;
   }
   .description {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: a;
     padding: 5px 0px;
@@ -518,17 +516,16 @@ a:visited {
   .section-2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[2];
+ 
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "a a " "b b ";
+        grid-template-areas: "a a "
+ "b b ";
     justify-items: center;
     font-family: "Roboto", sans-serif;
     padding: 2rem;
     background-color: #F8F8F8;
   }
   .description {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: a;
     padding: 5px 0px;
