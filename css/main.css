@@ -10,7 +10,9 @@
   text-decoration: none;
   list-style-type: none;
 }
-
+.functioning .item{
+  color:black !important;
+}
 a:visited {
   color: black;
 }
